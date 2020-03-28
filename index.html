@@ -7,6 +7,43 @@
         tr.group:hover {
             background-color: #009688 !important;
         }
+
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,6 +71,7 @@
 </head>
 
 <body>
+    <!-- <div id="loader" class="loader"></div> -->
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo"> KashurQuran.in</a>
@@ -298,7 +336,10 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
+        // $(window).on('load', () => {
 
+        //     $('#loader').fadeOut('slow')
+        // })
         var dataSet = [
             ["000", "Introduction", "0.1", "Introduction to the translation By MirWaayiz: Umar Farooq", "<audio controls><source src=\"/KashurQuran/Quran/000/1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/KashurQuran/Quran/000/1.mp3\" target=\"_blank\" download><i class=\"material-icons\">cloud_download</i></a >"],
             ["000", "Introduction", "0.2", "Arz-e-Haal By MirWaayiz: Mirwaayiz Mohammad Yousuf Shah", "<audio controls><source src=\"/KashurQuran/Quran/000/2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/KashurQuran/Quran/000/2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a >"],
@@ -485,6 +526,7 @@
         ];
 
         $(document).ready(function () {
+
             var groupColumn = 1;
             $('#QuranTable').DataTable({
                 data: dataSet,
