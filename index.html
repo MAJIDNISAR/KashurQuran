@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <style>
+        tr.group,
+        tr.group:hover {
+            background-color: #009688 !important;
+        }
+    </style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kaeshur Quran translation</title>
@@ -479,6 +485,7 @@
         ];
 
         $(document).ready(function () {
+            var groupColumn = 1;
             $('#QuranTable').DataTable({
                 data: dataSet,
                 columns: [
@@ -489,8 +496,36 @@
                     { title: "Audio" },
                     { title: "Download" }
 
-                ]
+                ],
+                "order": [[groupColumn, 'asc']],
+                "displayLength": 25,
+                "drawCallback": function (settings) {
+                    var api = this.api();
+                    var rows = api.rows({ page: 'current' }).nodes();
+                    var last = null;
+
+                    api.column(groupColumn, { page: 'current' }).data().each(function (group, i) {
+                        if (last !== group) {
+                            $(rows).eq(i).before(
+                                '<tr class="group"><td colspan="6">' + group + '</td></tr>'
+                            );
+
+                            last = group;
+                        }
+                    });
+                }
+
             });
+            // Order by the grouping
+            // $('#QuranTable tbody').on('click', 'tr.group', function () {
+            //     var currentOrder = table.order()[0];
+            //     if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
+            //         table.order([groupColumn, 'desc']).draw();
+            //     }
+            //     else {
+            //         table.order([groupColumn, 'asc']).draw();
+            //     }
+            // });
         });
 
     </script>
