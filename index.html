@@ -497,7 +497,7 @@
                     { title: "Download" }
 
                 ],
-                "order": [[groupColumn, 'asc']],
+                "order": [[0, 'asc']],
                 "displayLength": 25,
                 "drawCallback": function (settings) {
                     var api = this.api();
@@ -517,15 +517,15 @@
 
             });
             // Order by the grouping
-            // $('#QuranTable tbody').on('click', 'tr.group', function () {
-            //     var currentOrder = table.order()[0];
-            //     if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
-            //         table.order([groupColumn, 'desc']).draw();
-            //     }
-            //     else {
-            //         table.order([groupColumn, 'asc']).draw();
-            //     }
-            // });
+            $('#QuranTable tbody').on('click', 'tr.group', function () {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
+                    table.order([groupColumn, 'desc']).draw();
+                }
+                else {
+                    table.order([groupColumn, 'asc']).draw();
+                }
+            });
         });
 
     </script>
