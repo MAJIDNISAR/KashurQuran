@@ -105,6 +105,7 @@
             }
         }
     </style>
+    <script src="javascripts/lottie-player.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kaeshur Quran translation</title>
@@ -197,7 +198,11 @@
 </head>
 
 <body>
-    <!-- <div id="loader" class="loader"></div> -->
+    <div id="loader" class="loader">bismillah.json
+        <lottie-player stylle="height:100vh" class="img-responsive" src="./images/bismillah.json"
+            background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="brand-logo"> KashurQuran.in</a>
@@ -464,10 +469,10 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-        // $(window).on('load', () => {
+        $(window).on('load', () => {
 
-        //     $('#loader').fadeOut('slow')
-        // })
+            $('#loader').fadeOut('slow')
+        })
         var dataSet = [
             ["000", "Introduction", "0.1", "Introduction to the translation By MirWaayiz: Umar Farooq", "<audio controls><source src=\"/Quran/000/1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/000/1.mp3\" target=\"_blank\" download><i class=\"material-icons\">cloud_download</i></a >"],
             ["000", "Introduction", "0.2", "Arz-e-Haal By MirWaayiz: Mirwaayiz Mohammad Yousuf Shah", "<audio controls><source src=\"/Quran/000/2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/000/2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a >"],
