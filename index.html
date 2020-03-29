@@ -3,6 +3,66 @@
 
 <head>
     <style>
+        /* data table responsive media queries */
+        /* @media screen and (min-width:993px) {
+            #data-table-simple>thead>tr>th {
+                padding-left: 0px !important;
+            }
+        }
+
+        @media screen and (max-width:992px) and (min-width:600px) {
+            #data-table-simple>thead>tr>th {
+                width: 100% !important;
+                height: 40px !important;
+                padding: 0px !important;
+            }
+
+            #data-table-simple>tbody>tr>td {
+                width: 100% !important;
+                height: 40px !important;
+                padding: 0px !important;
+            }
+
+            #data-table-simple>thead>tr {
+                padding: 0px !important;
+            }
+
+            #data-table-simple>thead {
+                width: 20% !important;
+            }
+
+            #data-table-simple>tbody {
+                width: 79% !important;
+            }
+        }
+
+        @media screen and (max-width:599px) {
+            #data-table-simple>thead>tr>th {
+                width: 100% !important;
+                height: 40px !important;
+                padding: 0px !important;
+            }
+
+            #data-table-simple>tbody>tr>td {
+                width: 100% !important;
+                height: 40px !important;
+                padding: 0px !important;
+            }
+
+            #data-table-simple>thead>tr {
+                padding: 0px !important;
+            }
+
+            #data-table-simple>thead {
+                width: 30% !important;
+            }
+
+            #data-table-simple>tbody {
+                width: 69% !important;
+            }
+        } */
+
+        /* data table responsive */
         tr.group,
         tr.group:hover {
             background-color: #009688 !important;
@@ -48,6 +108,31 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kaeshur Quran translation</title>
+    <!-- Bootstrap cdn -->
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" -->
+    <!-- integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script> -->
+    <!-- bootsrap -->
+    <!-- bootstrap responsive data table -->
+    <!-- js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script> -->
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css"> -->
+
+    <!-- bootstrap responsive data table -->
+
     <!-- Bring in Jquery -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -169,7 +254,8 @@
                             Kashmiri Translation</h3>
                         <div class="row center">
                             <div class="col s12">
-                                <table class="responsive-table highlight centered" id="QuranTable">
+                                <table class="uk-table uk-table-hover uk-table-striped" id="QuranTable">
+
                                     <!-- <thead>
                                         <tr>
                                             <th>Chapter No.</th>
