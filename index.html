@@ -3,6 +3,26 @@
 
 <head>
     <style>
+        .loader_bg {
+            position: fixed;
+            z-index: 9999999;
+            background: transparent;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+        }
+
+        .loader {
+            border: 0 solid transparent;
+        }
+
+        /* 
+        .loader::before,
+        .loader::after {
+
+        } */
+
         /* data table responsive media queries */
         /* @media screen and (min-width:993px) {
             #data-table-simple>thead>tr>th {
@@ -198,9 +218,9 @@
 </head>
 
 <body>
-    <div id="loader" class="loader">
-        <lottie-player stylle="height:100vh" class="img-responsive" src="./images/bismillah.json"
-            background="transparent" speed="1" loop autoplay>
+    <div class="loader_bg">
+        <lottie-player class="img-responsive loader" src="./images/bismillah.json" background="#4db6ac" speed="1"
+            id="loader" autoplay>
         </lottie-player>
     </div>
     <nav class="white" role="navigation">
@@ -229,7 +249,7 @@
 
                 <div class="row center">
                     <b><i>
-                            <h1 class="header col s12 light">بسم الله الرحمن الرحيم
+                            <h1 class="header col s12 teal-text text-lighten-2">بسم الله الرحمن الرحيم
                             </h1>
                         </i></b>
 
@@ -259,7 +279,8 @@
                             Kashmiri Translation</h3>
                         <div class="row center">
                             <div class="col s12">
-                                <table class="uk-table uk-table-hover uk-table-striped" id="QuranTable">
+                                <table class="uk-table uk-table-hover uk-table-striped responsive-table"
+                                    id="QuranTable">
 
                                     <!-- <thead>
                                         <tr>
@@ -470,8 +491,11 @@
     <script src="js/init.js"></script>
     <script>
         $(window).on('load', () => {
+            setTimeout(() => {
+                $('.loader_bg').fadeToggle('slow')
 
-            $('#loader').fadeOut('slow')
+            }, 4000);
+
         })
         var dataSet = [
             ["000", "Introduction", "0.1", "Introduction to the translation By MirWaayiz: Umar Farooq", "<audio controls><source src=\"/Quran/000/1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/000/1.mp3\" target=\"_blank\" download><i class=\"material-icons\">cloud_download</i></a >"],
