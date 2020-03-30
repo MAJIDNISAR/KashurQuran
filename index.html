@@ -4,25 +4,25 @@
 <head>
     <style>
         .loader_bg {
-            position: fixed;
-            z-index: 9999999;
+            /* position: fixed; */
+            z-index: 999999;
             background: transparent;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-
+            width: 100vh;
+            height: 100vh;
+            /* position: absolute; */
         }
-
+        
         .loader {
-            border: 0 solid transparent;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9999999;
+            position: fixed;
         }
-
         /* 
         .loader::before,
         .loader::after {
 
         } */
-
         /* data table responsive media queries */
         /* @media screen and (min-width:993px) {
             #data-table-simple>thead>tr>th {
@@ -81,7 +81,6 @@
                 width: 69% !important;
             }
         } */
-
         /* data table responsive */
         /* tr.group,
         tr.group:hover {
@@ -217,8 +216,8 @@
 </head>
 
 <body>
-    <div class="loader_bg">
-        <lottie-player class="loader" src="./images/bismillah.json" background="#4db6ac" speed="1" id="loader" autoplay>
+    <div class="loader_bg ">
+        <lottie-player class="loader responsive-img" style=" width: auto;height: auto;" src="./images/bismillah.json" background="#4db6ac" speed="1" id="loader" autoplay>
         </lottie-player>
     </div>
     <nav class="white" role="navigation">
@@ -273,33 +272,41 @@
             <div class="row center">
                 <div class="col s12 ">
                     <div id="responsive centered" class="section scrollspy">
-                        <h3 class=" header" style="color: teal;font-weight: bold;font-style: italic;">Quran with
-                            Kashmiri Translation</h3>
+                        <h3 class=" header" style="color: teal;font-weight: bold;font-style: italic;">Quran with Kashmiri Translation</h3>
                         <div class="row center">
                             <div class="col s12">
-                                <table class="uk-table uk-table-hover uk-table-striped" id="QuranTable">
+                                <div class="card">
+                                    <span class="card-title">
+                                        <div class="card-content" style="width: auto;">
+                                            <table class="uk-table uk-table-hover uk-table-striped card-content"
+                                                id="QuranTable">
 
-                                    <!-- <thead>
-                                        <tr>
-                                            <th>Chapter No.</th>
-                                            <th>Chapter Name</th>
-                                            <th>Media</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Alvin</td>
-                                            <td>Eclair</td>
-                                            <td>
-                                                <audio controls>
-                                                    <source src="Quran/000/1.mp3" type="audio/mp3">
-                                                    Your browser does not support the audio element.
-                                                </audio>
+                                                <!-- <thead>
+                                                                                    <tr>
+                                                                                        <th>Chapter No.</th>
+                                                                                        <th>Chapter Name</th>
+                                                                                        <th>Media</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Alvin</td>
+                                                                                        <td>Eclair</td>
+                                                                                        <td>
+                                                                                            <audio controls>
+                                                                                                <source src="Quran/000/1.mp3" type="audio/mp3">
+                                                                                                Your browser does not support the audio element.
+                                                                                            </audio>
+                                            
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody> -->
+                                            </table>
+                                        </div>
+                                    </span>
 
-                                            </td>
-                                        </tr>
-                                    </tbody> -->
-                                </table>
+                                </div>
+
                             </div>
                         </div>
 
@@ -339,14 +346,10 @@
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact Us</h4>
-                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna
-                        fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
-                        ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam
-                        eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi
-                        massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non
-                        tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        Curae;</p>
+                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien
+                        id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed
+                        ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    </p>
                 </div>
             </div>
 
@@ -384,10 +387,7 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text"> KashurQuran.in</h5>
-                    <p class="grey-text text-lighten-4">We are a team of enthusiastic people, who share passion of using
-                        technology in services of humanity it's our full time job. Any amount would help support and
-                        continue development on this project
-                        and is greatly appreciated.</p>
+                    <p class="grey-text text-lighten-4">We are a team of enthusiastic people, who share passion of using technology in services of humanity it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
                     <!-- <ul class="list-inline text-center footer-links">
                         <li>
                             <a href="https://www.facebook.com/MAJIDNISAR" title="Facebook">
@@ -489,7 +489,15 @@
     <script>
         $(window).on('load', () => {
             setTimeout(() => {
+                // $("body").find("*").attr("disabled", "disabled");
+                // $("body").find("a").click(function(e) {
+                //     e.preventDefault();
+                // });
+
                 $('.loader_bg').fadeToggle('slow')
+                    // $("body").find("*").removeAttr("disabled");
+                    // $("body").find("a").unbind("click");
+
 
             }, 3000);
 
@@ -675,21 +683,29 @@
             ["114", "Surah Naas", "114", "Surah Naas Part1", "<audio controls><source src=\"/Quran/114/Surah Naas 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/114/Surah Naas 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "]
         ];
 
-        $(document).ready(function () {
+        $(document).ready(function() {
 
             var groupColumn = 1;
             $('#QuranTable').DataTable({
                 data: dataSet,
-                columns: [
-                    { title: "Chapter No." },
-                    { title: "Chapter Name" },
-                    { title: "Parts" },
-                    { title: "Description" },
-                    { title: "Audio" },
-                    { title: "Download" }
+                columns: [{
+                        title: "Chapter No."
+                    }, {
+                        title: "Chapter Name"
+                    }, {
+                        title: "Parts"
+                    }, {
+                        title: "Description"
+                    }, {
+                        title: "Audio"
+                    }, {
+                        title: "Download"
+                    }
 
                 ],
-                "order": [[0, 'asc']],
+                "order": [
+                    [0, 'asc']
+                ],
                 "displayLength": 5,
                 "lengthMenu": [5, 10, 25, 50, 75, 100, 125, 150, 175, 200],
                 "pagingType": "full_numbers",
@@ -700,12 +716,16 @@
                 // dom: 'lfrtip',
                 // "lengthMenu": [10, 25, 50, 75, 100, 114],
 
-                "drawCallback": function (settings) {
+                "drawCallback": function(settings) {
                     var api = this.api();
-                    var rows = api.rows({ page: 'current' }).nodes();
+                    var rows = api.rows({
+                        page: 'current'
+                    }).nodes();
                     var last = null;
 
-                    api.column(groupColumn, { page: 'current' }).data().each(function (group, i) {
+                    api.column(groupColumn, {
+                        page: 'current'
+                    }).data().each(function(group, i) {
                         if (last !== group) {
                             $(rows).eq(i).before(
                                 '<tr class="group"><td colspan="6">' + group + '</td></tr>'
@@ -718,17 +738,15 @@
 
             });
             // Order by the grouping
-            $('#QuranTable tbody').on('click', 'tr.group', function () {
+            $('#QuranTable tbody').on('click', 'tr.group', function() {
                 var currentOrder = table.order()[0];
                 if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
                     table.order([groupColumn, 'desc']).draw();
-                }
-                else {
+                } else {
                     table.order([groupColumn, 'asc']).draw();
                 }
             });
         });
-
     </script>
 </body>
 
