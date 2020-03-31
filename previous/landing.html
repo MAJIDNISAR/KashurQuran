@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kashur Quran &middot; Saene Madre Zabaane Manz.</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
+  <meta property="og:url" content="https://KashurQuran.in">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kashur Quran is Quran tranlated in Kashmiri Language..">
+  <meta property="og:description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@majidnisar">
+  <meta name="twitter:creator" content="@majidnisar">
+  <meta name="twitter:title" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
+  <meta name="twitter:description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
+  <meta name="twitter:image" content="">
+
+  <script src="js/lottie-player.js"></script>
+  <!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"> -->
+  <meta name="theme-color" content="#ffffff">
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+  <!-- <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script> -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
+  <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"> -->
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/elephant.min.css">
+  <link rel="stylesheet" href="css/demo.min.css">
+  <link rel="stylesheet" href="css/landing-page.min.css">
+</head>
+
+<body class="spinner spinner-primary spinner-lg page-loaded">
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img class="navbar-brand-logo" src="images/qurangreen.png" alt="KashurQuran" style=" height: 76px !important;
+                      margin-top: -13px;
+                      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                      border-radius: 4px;
+                      box-sizing: border-box;">
+        </a>
+      </div>
+      <nav id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://KashurQuran.in">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <div class="navbar-btn-group">
+              <a class="navbar-btn btn btn-primary btn-block" href="signup-1.html">Sign up</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="masthead-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <h3 class="masthead-heading">The fastest way to build Modern Admin APPS for any
+                  platform, browser, or device.</h3>
+                <p class="masthead-lead">KashurQuran is a front-end template created to help you develop
+                  modern web applications, fast and in a professional manner. Built on top of
+                  Bootstrap, it includes a large collection of HTML, CSS, and JS components that
+                  is simple to use and easy to customise.</p>
+              </div>
+              <div class="col-sm-12 col-sm-offset-0">
+                <lottie-player class="masthead-img" " src=" ./images/bismillah.json " background=" ##0ac29d " speed="
+                  1 " id=" loader " autoplay>
+                </lottie-player>
+                                <!-- <img class=" masthead-img " src=" images/original.jpg " alt=" KashurQuran "> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class=" layout-main">
+                  <div class="content">
+                    <div class="layout-content-body">
+                      <div class="text-center m-b">
+                        <h3 class="m-b-0">Quran Table</h3>
+                        <small>Below are the 114 Chapters From Holy Quran</small>
+                      </div>
+
+                      <div class="row gutter-xs">
+                        <div class="col-xs-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="card-actions">
+                                <button type="button" class="card-action card-toggler" title="Collapse"></button>
+                                <button type="button" class="card-action card-reload" title="Reload"></button>
+                                <button type="button" class="card-action card-remove" title="Remove"></button>
+                              </div>
+                              <strong>Holy Quran</strong>
+                            </div>
+                            <div class="card-body">
+                              <table id="QuranTable" class="table table-bordered table-striped table-nowrap dataTable"
+                                cellspacing="0" width="100%">
+
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- <div class=" section ">
+        <div class=" container ">
+            <div class=" row ">
+                <div class=" col-xs-12 " data-animation-name=" fadeIn " data-animation-delay=" 01s ">
+                    <h3>Modi blanditiis mollitia consequatur suscipit, natus possimus totam rem eius.</h3>
+                    <div class=" row ">
+                        <div class=" col-md-8 col-md-offset-2 ">
+                            <p>Praesent consequat arcu sem, vitae accumsan nunc lacinia id. Mauris quis odio arcu donec pharetra et nibh et vulputate class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos metus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-sm-6 ">
+                    <div class=" row ">
+                        <div class=" col-sm-6 " data-animation-name=" fadeIn " data-animation-delay=" 02s ">
+                            <img width=" 48 " height=" 48 " src=" img/4337135755.png " alt=" Bootstrap ">
+                            <h4>Bootstrap</h4>
+                            <p>
+                                <small>Aenean urna erat, ornare at cursus ac, dapibus eu turpis. Pellentesque congue volutpat leo, viverra euismod magna accumsan eu. Nunc hendrerit nibh purus, eget luctus leo faucibus vel. Donec at nullam.</small>
+                            </p>
+                        </div>
+                        <div class=" divider divider-vertical ">
+                            <div class=" divider-content ">
+                                <strong class=" fz-lg ">+</strong>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 " data-animation-name=" fadeIn " data-animation-delay=" 03s ">
+                            <img width=" 48 " height=" 48 " src=" img/4460638882.png " alt=" Plugins ">
+                            <h4>Plugins</h4>
+                            <p>
+                                <small>Nunc sapien nisi, sollicitudin eu mauris quis, ultrices aliquam nunc. Integer ac cursus diam. Maecenas volutpat nisi vel condimentum aliquet. Duis non lacus nec tellus vehicula lobortis at id posuere.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" divider divider-vertical ">
+                    <div class=" divider-content ">
+                        <strong class=" fz-lg ">+</strong>
+                    </div>
+                </div>
+                <div class=" col-sm-6 ">
+                    <div class=" row ">
+                        <div class=" col-sm-6 " data-animation-name=" fadeIn " data-animation-delay=" 04s ">
+                            <img width=" 48 " height=" 48 " src=" img/4522104820.png " alt=" Plugins ">
+                            <h4>Mind</h4>
+                            <p>
+                                <small>Aenean aliquet, justo ut tristique vestibulum, felis massa vulputate mauris, eu consectetur leo nunc eu sem. Phasellus id odio sit amet nunc vulputate cursus sit amet et diam. Sed sit amet massa nunc.</small>
+                            </p>
+                        </div>
+                        <div class=" divider divider-vertical ">
+                            <div class=" divider-content ">
+                                <strong class=" fz-lg ">=</strong>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 " data-animation-name=" fadeIn " data-animation-delay=" 05s ">
+                            <img width=" 48 " height=" 48 " src=" img/4608823220.png " alt=" KashurQuran ">
+                            <h4>KashurQuran</h4>
+                            <p>
+                                <small>In sollicitudin augue in fermentum maximus. Mauris dui ipsum, pharetra auctor quam quis, egestas maximus lectus. Aliquam accumsan arcu et tellus bibendum, vel facilisis turpis tristique. Maecenas sed.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-md-6 col-md-push-6 ">
+                    <img class=" img-responsive " src=" img/4790827186.png " alt=" Small
+                                    devices " data-animation-name=" fadeInRight " data-animation-delay=" 03s ">
+                </div>
+                <div class=" col-md-6 col-md-pull-6 ">
+                    <ul class=" feature-list ">
+                        <li class=" feature ">
+                            <div class=" feature-icon " data-animation-name=" rollIn " data-animation-delay=" 02s ">
+                                <span class=" icon icon-cogs "></span>
+                            </div>
+                            <div class=" feature-content " data-animation-name=" fadeInLeft " data-animation-delay="
+                                    02s ">
+                                <h2>100% Customizable</h2>
+                                <p>Nulla egestas luctus ex, et laoreet orci ultricies sit amet. Sed sodales tellus a lobortis volutpat. Donec vel massa facilisis, facilisis massa sit amet, dignissim elit. Sed vestibulum tristique orci, at feugiat magna auctor
+                                    et. Fusce ex felis turpis duis.</p>
+                            </div>
+                        </li>
+                        <li class=" feature ">
+                            <div class=" feature-icon " data-animation-name=" rollIn " data-animation-delay=" 02s ">
+                                <span class=" icon icon-heart "></span>
+                            </div>
+                            <div class=" feature-content " data-animation-name=" fadeInLeft " data-animation-delay="
+                                    02s ">
+                                <h2>Easy to Install &amp; Use</h2>
+                                <p>Phasellus tempor urna sed venenatis commodo. Nulla venenatis pharetra vestibulum. Nulla nec velit vel ligula commodo dictum nec nec purus. Suspendisse aliquam libero eget fringilla auctor. Aliquam ultrices fermentum mi.
+                                    Quisque ultrices enim at massa nunc.</p>
+                            </div>
+                        </li>
+                        <li class=" feature ">
+                            <div class=" feature-icon " data-animation-name=" rollIn " data-animation-delay=" 01s ">
+                                <span class=" icon icon-magic "></span>
+                            </div>
+                            <div class=" feature-content " data-animation-name=" fadeInLeft " data-animation-delay="
+                                    01s ">
+                                <h2>5 Beautiful Themes (+2)</h2>
+                                <p>Nunc consectetur pretium aliquet. Curabitur tempor pretium diam, sed tincidunt turpis pellentesque auctor. Mauris non interdum nibh. Suspendisse potenti. Phasellus et est in erat tincidunt placerat. Cras quis tortor aliquam,
+                                    pharetra augue et orci aliquam.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" section ">
+        <div class=" container ">
+            <h1>FAQs</h1>
+            <hr class=" half-rule ">
+            <div class=" row ">
+                <div class=" col-sm-6 ">
+                    <ul class=" faq-list ">
+                        <li class=" faq " data-animation-name=" fadeInLeft " data-animation-delay=" 01s ">
+                            <h4 class=" faq-question ">Quisque iaculis eleifend lacus nullam?</h4>
+                            <p class=" faq-answer ">Ut a velit at neque mattis molestie. Nullam scelerisque faucibus est sit amet semper. Ut pellentesque, odio id volutpat egestas, urna mauris dictum urna, tincidunt semper volutpat.</p>
+                        </li>
+                        <li class=" faq " data-animation-name=" fadeInLeft " data-animation-delay=" 02s ">
+                            <h4 class=" faq-question ">Cras lobortis purus id maximus amet?</h4>
+                            <p class=" faq-answer ">Praesent eleifend mattis finibus. Proin fringilla facilisis convallis. Cras facilisis in nisi non dignissim. Phasellus fringilla massa auctor, sollicitudin dolor quis, ultricies nulla. Phasellus amet.</p>
+                        </li>
+                        <li class=" faq " data-animation-name=" fadeInLeft " data-animation-delay=" 03s ">
+                            <h4 class=" faq-question ">Donec pellentesque purus at neque posuere?</h4>
+                            <p class=" faq-answer ">Aenean condimentum urna nunc, vitae semper ipsum porttitor ac. Etiam commodo quam consequat gravida ullamcorper. Phasellus et imperdiet ligula. Proin sit amet nullam.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-sm-6 ">
+                    <ul class=" faq-list ">
+                        <li class=" faq " data-animation-name=" fadeInLeft " data-animation-delay=" 04s ">
+                            <h4 class=" faq-question ">Etiam in scelerisque augue in amet?</h4>
+                            <p class=" faq-answer ">Nulla id neque sit amet augue imperdiet auctor. Phasellus lobortis, ante quis posuere luctus, quam sapien efficitur neque, sed auctor ante ligula in elit. Integer aliquet gravida mi, nec mollis libero vestibulum vel.</p>
+                        </li>
+                        <li class=" faq " data-animation-name=" fadeInLeft " data-animation-delay=" 05s ">
+                            <h4 class=" faq-question ">Vestibulum sit amet malesuada amet?</h4>
+                            <p class=" faq-answer ">Sed scelerisque sem eget urna viverra, id iaculis leo pulvinar. Aenean quis arcu dui. Donec justo lorem, hendrerit at elit sit amet, euismod vehicula dui. Fusce sed tincidunt sem, et sed.</p>
+                        </li>
+                        <li class=" faq " data-animation-name=" fadeInLeft " data-animation-delay=" 06s ">
+                            <h4 class=" faq-question ">Interdum et malesuada fames ac ante ipsum primis in orci aliquam?</h4>
+                            <p class=" faq-answer ">Maecenas pellentesque ante ante, quis ullamcorper metus maximus id. Ut at laoreet mi, non aliquam sapien. Aenean id dolor at lacus aliquet faucibus sed dictum amet.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" staff ">
+        <div class=" container ">
+            <h1 class=" staff-heading " data-animation-name=" fadeIn " data-animation-delay=" 01s ">Meet the Staff</h1>
+            <p class=" staff-lead " data-animation-name=" fadeIn " data-animation-delay=" 02s ">Curabitur tortor lorem, tincidunt quis neque sed, fermentum dictum tortor. Nam ac lectus mauris. Integer imperdiet a est et interdum. Sed tristique, turpis tincidunt faucibus posuere, mi libero tempor lacus, id egestas nisl posuere.</p>
+            <div class=" staff-list ">
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Teddy Wilson, CEO " data-trigger=" hover " data-toggle="
+                                    popover " role=" button " data-animation-name=" fadeIn " data-animation-delay=" 01s ">
+                    <img class=" staff-list-img " src=" img/0180441436.jpg " alt=" Teddy Wilson ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Daniel Taylor, Director of Engineering " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 02s ">
+                    <img class=" staff-list-img " src=" img/0310728269.jpg " alt=" Daniel Taylor ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Harry Jones, Director of Design " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 03s ">
+                    <img class=" staff-list-img " src=" img/0299419341.jpg " alt=" Harry Jones ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Jessica Brown, Director of Finance " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 04s ">
+                    <img class=" staff-list-img " src=" img/1099386850.jpg " alt=" Jessica Brown ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Jason Saunders, Director of Sales " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 05s ">
+                    <img class=" staff-list-img " src=" img/2163317912.jpg " alt=" Jason Saunders ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Mitt Owen, Director of Operations " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 06s ">
+                    <img class=" staff-list-img " src=" img/1823060748.jpg " alt=" Mitt Owen ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Beatrix Walker, Director of Communications " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 07s ">
+                    <img class=" staff-list-img " src=" img/2790515408.jpg " alt=" Beatrix Walker ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Eliot Morgan, Director of Support Services " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 08s ">
+                    <img class=" staff-list-img " src=" img/0980726243.jpg " alt=" Eliot Morgan ">
+                </a>
+                <a class=" staff-list-item " href=" # " data-container=" body " data-placement="
+                                    bottom " data-content=" Ella Davis, Director of Human Resources " data-trigger="
+                                    hover " data-toggle=" popover " role=" button " data-animation-name="
+                                    fadeIn " data-animation-delay=" 09s ">
+                    <img class=" staff-list-img " src=" img/1182824800.jpg " alt=" Ella Davis ">
+                </a>
+            </div>
+            <ul class=" fact-list ">
+                <li class=" fact ">
+                    <span class=" fact-value " data-count=" up " data-start-value=" 0 " data-end-value=" 10 ">10</span>
+                    <span class=" fact-icon ">
+              <span class=" icon icon-plus "></span>
+                    </span>
+                    <span class=" fact-label ">years in business</span>
+                </li>
+                <li class=" fact ">
+                    <span class=" fact-value " data-count=" up " data-start-value=" 0 " data-end-value=" 561 ">561</span>
+                    <span class=" fact-icon ">
+              <span class=" icon icon-plus "></span>
+                    </span>
+                    <span class=" fact-label ">working at KashurQuran</span>
+                </li>
+                <li class=" fact ">
+                    <span class=" fact-value " data-count=" up " data-start-value=" 0 " data-end-value=" 1500 ">1500</span>
+                    <span class=" fact-icon ">
+              <span class=" icon icon-plus "></span>
+                    </span>
+                    <span class=" fact-label ">clients worldwide</span>
+                </li>
+                <li class=" fact ">
+                    <span class=" fact-value " data-count=" up " data-start-value=" 0 " data-end-value=" 7500 ">7500</span>
+                    <span class=" fact-icon ">
+              <span class=" icon icon-plus "></span>
+                    </span>
+                    <span class=" fact-label ">projects executed</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=" testimonials ">
+        <div class=" container ">
+            <h2>Read why our customers recommend KashurQuran:</h2>
+            <hr class=" half-rule ">
+            <div class=" row ">
+                <div class=" col-md-6 ">
+                    <div class=" row ">
+                        <div class=" col-sm-6 ">
+                            <div class=" testimonial " data-animation-name=" fadeIn " data-animation-delay=" 01s ">
+                                <p class=" testimonial-content ">
+                                    <span class=" testimonial-quote ">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus, nec massa nunc.</p>
+                                <p class=" testimonial-rating ">
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                </p>
+                                <strong>– Agatha Ford, CEO at Cactus</strong>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 ">
+                            <div class=" testimonial " data-animation-name=" fadeIn " data-animation-delay=" 02s ">
+                                <p class=" testimonial-content ">
+                                    <span class=" testimonial-quote ">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus, nec massa nunc.</p>
+                                <p class=" testimonial-rating ">
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                </p>
+                                <strong>– Dave Hamilton, CEO at AppSix</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 ">
+                    <div class=" row ">
+                        <div class=" col-sm-6 ">
+                            <div class=" testimonial " data-animation-name=" fadeIn " data-animation-delay=" 03s ">
+                                <p class=" testimonial-content ">
+                                    <span class=" testimonial-quote ">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus, nec massa nunc.</p>
+                                <p class=" testimonial-rating ">
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                </p>
+                                <strong>– Harry Walker, CEO at SemiDot</strong>
+                            </div>
+                        </div>
+                        <div class=" col-sm-6 ">
+                            <div class=" testimonial " data-animation-name=" fadeIn " data-animation-delay=" 04s ">
+                                <p class=" testimonial-content ">
+                                    <span class=" testimonial-quote ">“</span>Sed eros augue gravida ac diam vel, placerat venenatis felis. Aliquam interdum ipsum risus, nec massa nunc.</p>
+                                <p class=" testimonial-rating ">
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                    <span class=" icon icon-star "></span>
+                                </p>
+                                <strong>– Rebecca Fox, CEO at Visuality</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row ">
+                <div class=" col-md-12 ">
+                    <button class=" btn btn-primary btn-lg btn-pill " data-animation-name="
+                                    bounceInRight " data-animation-delay=" 05s ">Buy KashurQuran Now</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+              <div class=" footer ">
+                <div class=" container ">
+                  <div class=" row ">
+                    <div class=" col-sm-12 col-md-4 ">
+                      <h4 class=" footer-heading ">KashurQuran</h4>
+                      <p>
+                        <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                          Duis ac fermentum nibh, sit amet volutpat.</small>
+                      </p>
+                      <div class=" social-list ">
+                        <a class=" social-list-item " href=" # ">
+                          <span class=" icon icon-twitter "></span>
+                        </a>
+                        <a class=" social-list-item " href=" # ">
+                          <span class=" icon icon-facebook "></span>
+                        </a>
+                        <a class=" social-list-item " href=" # ">
+                          <span class=" icon icon-linkedin "></span>
+                        </a>
+                        <a class=" social-list-item " href=" # ">
+                          <span class=" icon icon-vimeo "></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class=" col-sm-4 col-md-2 col-md-offset-2 ">
+                      <h4 class=" footer-heading ">KashurQuran</h4>
+                      <ul class=" footer-links ">
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> About Us
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> KashurQuran Blog
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> KashurQuran Guidelines
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Staff
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class=" col-sm-4 col-md-2 ">
+                      <h4 class=" footer-heading ">Help</h4>
+                      <ul class=" footer-links ">
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Help Center
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> KashurQuran Blog
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> FAQs
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Forums
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class=" col-sm-4 col-md-2 ">
+                      <h4 class=" footer-heading ">Upgrade</h4>
+                      <ul class=" footer-links ">
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Personal
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Organization
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Organization Plus
+                          </a>
+                        </li>
+                        <li>
+                          <a href=" # ">
+                            <span class=" icon icon-angle-right "></span> Enterprise
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p>©
+                    <script>
+                      document.write(new Date().getFullYear())
+                    </script> KashurQuran, LLC. All rights reserved.</p>
+                </div>
+              </div>
+              <script src=" js/vendor.min.js "></script>
+              <script src="js/application.min.js"></script>
+              <script src=" js/elephant.min.js "></script>
+              <script src=" js/landing-page.min.js "></script>
+              <script>
+                var dataSet = [
+                  ["000", "Introduction", "0.1", "Introduction to the translation By MirWaayiz: Umar Farooq", "<audio controls><source src=\"/Quran/000/1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/000/1.mp3\" target=\"_blank\" download><i class=\"material-icons\">cloud_download</i></a >"],
+                  ["000", "Introduction", "0.2", "Arz-e-Haal By MirWaayiz: Mirwaayiz Mohammad Yousuf Shah", "<audio controls><source src=\"/Quran/000/2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/000/2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a >"],
+                  ["000", "Introduction", "0.3", "Introduction to Quran", "<audio controls><source src=\"/Quran/000/3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/000/3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a >"],
+                  ["001", "Surah Fatiha", "1.1", "Surah Shifa / Surah Fatiha  ", "<audio controls><source src=\"/Quran/001/SurahFatiah1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/001/SurahFatiah1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a >"],
+                  // ["002", "Surah Bakarah", "2.1", "Surah Bakarah Part1", "<audio controls><source src=\"/Quran/002/Surah Bakarah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a >"],
+                  // ["002", "Surah Bakarah", "2.2", "Surah Bakarah Part2", "<audio controls><source src=\"/Quran/002/Surah Bakarah 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.3", "Surah Bakarah Part3", "<audio controls><source src=\"/Quran/002/Surah Bakarah 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.4", "Surah Bakarah Part4", "<audio controls><source src=\"/Quran/002/Surah Bakarah 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.5", "Surah Bakarah Part5", "<audio controls><source src=\"/Quran/002/Surah Bakarah 5.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 5.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.6", "Surah Bakarah Part6", "<audio controls><source src=\"/Quran/002/Surah Bakarah 6.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 6.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.7", "Surah Bakarah Part7", "<audio controls><source src=\"/Quran/002/Surah Bakarah 7.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 7.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.8", "Surah Bakarah Part8", "<audio controls><source src=\"/Quran/002/Surah Bakarah 8.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 8.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.9", "Surah Bakarah Part9", "<audio controls><source src=\"/Quran/002/Surah Bakarah 9.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 9.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["002", "Surah Bakarah", "2.10", "Surah Bakarah Part10", "<audio controls><source src=\"/Quran/002/Surah Bakarah 10.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 10.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["003", "Surah Aaleimran", "3.1", "Surah Aaleimran Part1", "<audio controls><source src=\"/Quran/003/Surah Aaleimran 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/003/Surah Aaleimran 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["003", "Surah Aaleimran", "3.2", "Surah Aaleimran Part2", "<audio controls><source src=\"/Quran/003/Surah Aaleimran 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/003/Surah Aaleimran 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["003", "Surah Aaleimran", "3.3", "Surah Aaleimran Part3", "<audio controls><source src=\"/Quran/003/Surah Aaleimran 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/003/Surah Aaleimran 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["003", "Surah Aaleimran", "3.4", "Surah Aaleimran Part4", "<audio controls><source src=\"/Quran/003/Surah Aaleimran 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/003/Surah Aaleimran 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["003", "Surah Aaleimran", "3.5", "Surah Aaleimran Part5", "<audio controls><source src=\"/Quran/003/Surah Aaleimran 5.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/003/Surah Aaleimran 5.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["004", "Surah Nissa", "4.1", "Surah Nissa Part1", "<audio controls><source src=\"/Quran/004/Surah Nissa 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/004/Surah Nissa 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["004", "Surah Nissa", "4.2", "Surah Nissa Part2", "<audio controls><source src=\"/Quran/004/Surah Nissa 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/004/Surah Nissa 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["004", "Surah Nissa", "4.3", "Surah Nissa Part3", "<audio controls><source src=\"/Quran/004/Surah Nissa 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/004/Surah Nissa 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["004", "Surah Nissa", "4.4", "Surah Nissa Part4", "<audio controls><source src=\"/Quran/004/Surah Nissa 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/004/Surah Nissa 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["004", "Surah Nissa", "4.5", "Surah Nissa Part5", "<audio controls><source src=\"/Quran/004/Surah Nissa 5.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/004/Surah Nissa 5.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["004", "Surah Nissa", "4.6", "Surah Nissa Part6", "<audio controls><source src=\"/Quran/004/Surah Nissa 6.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/004/Surah Nissa 6.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["005", "Surah Maaida", "5.1", "Surah Maaida Part1", "<audio controls><source src=\"/Quran/005/Surah Maaida 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/005/Surah Maaida 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["005", "Surah Maaida", "5.2", "Surah Maaida Part2", "<audio controls><source src=\"/Quran/005/Surah Maaida 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/005/Surah Maaida 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["005", "Surah Maaida", "5.3", "Surah Maaida Part3", "<audio controls><source src=\"/Quran/005/Surah Maaida 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/005/Surah Maaida 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["005", "Surah Maaida", "5.4", "Surah Maaida Part4", "<audio controls><source src=\"/Quran/005/Surah Maaida 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/005/Surah Maaida 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["006", "Surah Anaam", "6.1", "Surah Anaam Part1", "<audio controls><source src=\"/Quran/006/Surah Anaam 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/006/Surah Anaam 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["006", "Surah Anaam", "6.2", "Surah Anaam Part2", "<audio controls><source src=\"/Quran/006/Surah Anaam 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/006/Surah Anaam 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["006", "Surah Anaam", "6.3", "Surah Anaam Part3", "<audio controls><source src=\"/Quran/006/Surah Anaam 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/006/Surah Anaam 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["006", "Surah Anaam", "6.4", "Surah Anaam Part4", "<audio controls><source src=\"/Quran/006/Surah Anaam 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/006/Surah Anaam 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["006", "Surah Anaam", "6.5", "Surah Anaam Part5", "<audio controls><source src=\"/Quran/006/Surah Anaam 5.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/006/Surah Anaam 5.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["007", "Surah Aaraf", "7.1", "Surah Aaraf Part1", "<audio controls><source src=\"/Quran/007/Surah Aaraf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/007/Surah Aaraf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["007", "Surah Aaraf", "7.2", "Surah Aaraf Part2", "<audio controls><source src=\"/Quran/007/Surah Aaraf 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/007/Surah Aaraf 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["007", "Surah Aaraf", "7.3", "Surah Aaraf Part3", "<audio controls><source src=\"/Quran/007/Surah Aaraf 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/007/Surah Aaraf 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["007", "Surah Aaraf", "7.4", "Surah Aaraf Part4", "<audio controls><source src=\"/Quran/007/Surah Aaraf 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/007/Surah Aaraf 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["007", "Surah Aaraf", "7.5", "Surah Aaraf Part5", "<audio controls><source src=\"/Quran/007/Surah Aaraf 5.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/007/Surah Aaraf 5.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["008", "Surah Anfaal", "8.1", "Surah Anfaal Part1", "<audio controls><source src=\"/Quran/008/Surah Anfaal 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/008/Surah Anfaal 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["008", "Surah Anfaal", "8.2", "Surah Anfaal Part2", "<audio controls><source src=\"/Quran/008/Surah Anfaal 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/008/Surah Anfaal 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["009", "Surah Tauba", "9.1", "Surah Tauba Part1", "<audio controls><source src=\"/Quran/009/Surah Tauba 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/009/Surah Tauba 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["009", "Surah Tauba", "9.2", "Surah Tauba Part2", "<audio controls><source src=\"/Quran/009/Surah Tauba 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/009/Surah Tauba 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["009", "Surah Tauba", "9.3", "Surah Tauba Part3", "<audio controls><source src=\"/Quran/009/Surah Tauba 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/009/Surah Tauba 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["009", "Surah Tauba", "9.4", "Surah Tauba Part4", "<audio controls><source src=\"/Quran/009/Surah Tauba 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/009/Surah Tauba 4.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["010", "Surah Younas", "10.1", "Surah Younas Part1", "<audio controls><source src=\"/Quran/010/Surah Younas 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/010/Surah Younas 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["010", "Surah Younas", "10.2", "Surah Younas Part2", "<audio controls><source src=\"/Quran/010/Surah Younas 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/010/Surah Younas 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["010", "Surah Younas", "10.3", "Surah Younas Part3", "<audio controls><source src=\"/Quran/010/Surah Younas 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/010/Surah Younas 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["011", "Surah Hood", "11.1", "Surah Hood Part1", "<audio controls><source src=\"/Quran/011/Surah Hood 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/011/Surah Hood 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["011", "Surah Hood", "11.2", "Surah Hood Part2", "<audio controls><source src=\"/Quran/011/Surah Hood 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/011/Surah Hood 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["011", "Surah Hood", "11.3", "Surah Hood Part3", "<audio controls><source src=\"/Quran/011/Surah Hood 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/011/Surah Hood 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["012", "Surah Yousaf", "12.1", "Surah Hood Part1", "<audio controls><source src=\"/Quran/012/Surah Yousaf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/012/Surah Yousaf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["012", "Surah Yousaf", "12.2", "Surah Hood Part2", "<audio controls><source src=\"/Quran/012/Surah Yousaf 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/012/Surah Yousaf 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["013", "Surah Yousaf", "13.1", "Surah Raad Part1", "<audio controls><source src=\"/Quran/013/Surah Raad 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/013/Surah Raad 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["014", "Surah Ibrahim", "14.1", "Surah Ibrahim Part1", "<audio controls><source src=\"/Quran/014/Surah Ibrahim 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/014/Surah Ibrahim 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["015", "Surah Hijar", "15.1", "Surah Hijar Part1", "<audio controls><source src=\"/Quran/015/Surah Hijar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/015/Surah Hijar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["016", "Surah Nahal", "16.1", "Surah Nahal Part1", "<audio controls><source src=\"/Quran/016/Surah Nahal 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/016/Surah Nahal 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["016", "Surah Nahal", "16.2", "Surah Nahal Part2", "<audio controls><source src=\"/Quran/016/Surah Nahal 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/016/Surah Nahal 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["017", "Surah Bani Israel", "17.1", "Surah Bani Israel Part1", "<audio controls><source src=\"/Quran/017/Surah Bani Israel 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/017/Surah Bani Israel 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["017", "Surah Bani Israel", "17.2", "Surah Bani Israel Part2", "<audio controls><source src=\"/Quran/017/Surah Bani Israel 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/017/Surah Bani Israel 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["017", "Surah Bani Israel", "17.3", "Surah Bani Israel Part3", "<audio controls><source src=\"/Quran/017/Surah Bani Israel 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/017/Surah Bani Israel 3.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["018", "Surah Kahaf", "18.1", "Surah Kahaf Part1", "<audio controls><source src=\"/Quran/018/Surah Kahaf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/018/Surah Kahaf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["018", "Surah Kahaf", "18.2", "Surah Kahaf Part2", "<audio controls><source src=\"/Quran/018/Surah Kahaf 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/018/Surah Kahaf 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["019", "Surah Maryam", "19.1", "Surah Maryam Part1", "<audio controls><source src=\"/Quran/019/Surah Maryam 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/019/Surah Maryam 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["020", "Surah Tuaha", "20.1", "Surah Tuaha Part1", "<audio controls><source src=\"/Quran/020/Surah Tuaha 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/020/Surah Tuaha 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["020", "Surah Tuaha", "20.2", "Surah Tuaha Part2", "<audio controls><source src=\"/Quran/020/Surah Tuaha 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/020/Surah Tuaha 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["021", "Surah Ambiya", "21.1", "Surah Ambiya Part1", "<audio controls><source src=\"/Quran/021/Surah Ambiya 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/021/Surah Ambiya 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["021", "Surah Ambiya", "21.2", "Surah Ambiya Part2", "<audio controls><source src=\"/Quran/021/Surah Ambiya 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/021/Surah Ambiya 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["022", "Surah Hajj", "22.1", "Surah Hajj Part1", "<audio controls><source src=\"/Quran/022/Surah Hajj 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/022/Surah Hajj 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["022", "Surah Hajj", "22.2", "Surah Hajj Part2", "<audio controls><source src=\"/Quran/022/Surah Hajj 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/022/Surah Hajj 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["023", "Surah Mominoon", "23.1", "Surah Mominoon Part1", "<audio controls><source src=\"/Quran/023/Surah Mominoon 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/023/Surah Mominoon 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["023", "Surah Mominoon", "23.2", "Surah Mominoon Part2", "<audio controls><source src=\"/Quran/023/Surah Mominoon 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/023/Surah Mominoon 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["024", "Surah Noor", "24.1", "Surah Noor Part1", "<audio controls><source src=\"/Quran/024/Surah Noor 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/024/Surah Noor 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["024", "Surah Noor", "24.2", "Surah Noor Part2", "<audio controls><source src=\"/Quran/024/Surah Noor 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/024/Surah Noor 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["025", "Surah Furqan", "25.1", "Surah Furqan Part1", "<audio controls><source src=\"/Quran/025/Surah Furqan 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/025/Surah Furqan 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["026", "Surah Shuara", "26.1", "Surah Shuara Part1", "<audio controls><source src=\"/Quran/026/Surah Shuara1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/026/Surah Shuara1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["027", "Surah Namal", "27.1", "Surah Namal Part1", "<audio controls><source src=\"/Quran/027/Surah Namal1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/027/Surah Namal1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["027", "Surah Namal", "27.2", "Surah Namal Part2", "<audio controls><source src=\"/Quran/027/Surah Namal2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/027/Surah Namal2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["028", "Surah Qasas", "28.1", "Surah Qasas Part1", "<audio controls><source src=\"/Quran/028/Surah Qasas 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/028/Surah Qasas 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["028", "Surah Qasas", "28.2", "Surah Qasas Part2", "<audio controls><source src=\"/Quran/028/Surah Qasas 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/028/Surah Qasas 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["029", "Surah Ankaboot", "29.1", "Surah Ankaboot Part1", "<audio controls><source src=\"/Quran/029/Surah Ankaboot 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/029/Surah Ankaboot 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["029", "Surah Ankaboot", "29.2", "Surah Ankaboot Part2", "<audio controls><source src=\"/Quran/029/Surah Ankaboot 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/029/Surah Ankaboot 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["030", "Surah Room", "30.1", "Surah Room Part1", "<audio controls><source src=\"/Quran/030/Surah Room 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/030/Surah Room 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["031", "Surah Luqman", "31.1", "Surah Luqman Part1", "<audio controls><source src=\"/Quran/031/Surah Luqman 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/031/Surah Luqman 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["032", "Surah Sajda", "32.1", "Surah Sajda Part1", "<audio controls><source src=\"/Quran/032/Surah Sajda 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/032/Surah Sajda 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["033", "Surah Ahzab", "33.1", "Surah Ahzab Part1", "<audio controls><source src=\"/Quran/033/Surah Ahzab 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/033/Surah Ahzab 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["034", "Surah Saba", "34.1", "Surah Saba Part1", "<audio controls><source src=\"/Quran/034/Surah Saba 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/034/Surah Saba 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["034", "Surah Saba", "34.2", "Surah Saba Part2", "<audio controls><source src=\"/Quran/034/Surah Saba 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/034/Surah Saba 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["035", "Surah Fatir", "35.1", "Surah Fatir Part1", "<audio controls><source src=\"/Quran/035/Surah Fatir 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/035/Surah Fatir 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["035", "Surah Fatir", "35.2", "Surah Fatir Part2", "<audio controls><source src=\"/Quran/035/Surah Fatir 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/035/Surah Fatir 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["036", "Surah Yasin ", "36.1", "Surah Fatir Part1", "<audio controls><source src=\"/Quran/036/Surah Yasin 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/036/Surah Yasin 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["037", "Surah Suaffat", "37.1", "Surah Suaffat Part1", "<audio controls><source src=\"/Quran/037/Surah Suaffat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/037/Surah Suaffat 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["037", "Surah Suaffat", "37.2", "Surah Suaffat Part2", "<audio controls><source src=\"/Quran/037/Surah Suaffat 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/037/Surah Suaffat 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["038", "Surah Suad", "38.1", "Surah Suaffat Part1", "<audio controls><source src=\"/Quran/038/Surah Suad 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/038/Surah Suad 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["038", "Surah Suad", "38.2", "Surah Suaffat Part2", "<audio controls><source src=\"/Quran/038/Surah Suad 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/038/Surah Suad 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["039", "Surah Zumar", "39.1", "Surah Zumar Part1", "<audio controls><source src=\"/Quran/039/Surah Zumar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/039/Surah Zumar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["039", "Surah Zumar", "39.2", "Surah Zumar Part2", "<audio controls><source src=\"/Quran/039/Surah Zumar 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/039/Surah Zumar 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["040", "Surah Momin", "40.1", "Surah Momin Part1", "<audio controls><source src=\"/Quran/040/Surah Momin 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/040/Surah Momin 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["040", "Surah Momin", "40.1", "Surah Momin Part2", "<audio controls><source src=\"/Quran/040/Surah Momin 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/040/Surah Momin 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["041", "Surah Hamim Sajda / Fusilat", "41", "Surah Fussilat Part1", "<audio controls><source src=\"/Quran/041/Surah Hamim Sajda 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/041/Surah Hamim Sajda 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["042", "Surah Shura", "42.1", "Surah Shura Part1", "<audio controls><source src=\"/Quran/042/Surah Shura 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/042/Surah Shura 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["042", "Surah Shura", "42.2", "Surah Shura Part2", "<audio controls><source src=\"/Quran/042/Surah Shura 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/042/Surah Shura 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["043", "Surah Zukhruf", "43", "Surah Zukhruf Part1", "<audio controls><source src=\"/Quran/043/Surah Zukhruf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/043/Surah Zukhruf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["043", "Surah Zukhruf", "43", "Surah Zukhruf Part1", "<audio controls><source src=\"/Quran/043/Surah Zukhruf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/043/Surah Zukhruf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["044", "Surah Dukhan", "44", "Surah Dukhan Part1", "<audio controls><source src=\"/Quran/044/Surah Dukhan 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/044/Surah Dukhan 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["045", "Surah Jasia", "45", "Surah Jasia Part1", "<audio controls><source src=\"/Quran/045/Surah Jasia 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/045/Surah Jasia 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["046", "Surah Ahkaf", "46", "Surah Ahkaf Part1", "<audio controls><source src=\"/Quran/046/Surah Ahkaf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/046/Surah Ahkaf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["047", "Surah Muhammad", "47", "Surah Muhammad Part1", "<audio controls><source src=\"/Quran/047/Surah Muhammad 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/047/Surah Muhammad 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["048", "Surah Fatah", "48", "Surah Fatah Part1", "<audio controls><source src=\"/Quran/048/Surah Fatah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/048/Surah Fatah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["049", "Surah Hujrat", "49", "Surah Hujrat Part1", "<audio controls><source src=\"/Quran/049/Surah Hujrat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/049/Surah Hujrat 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["050", "Surah Kaaf", "50", "Surah Kaaf Part1", "<audio controls><source src=\"/Quran/050/Surah Kaaf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/050/Surah Kaaf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["051", "Surah Zariat", "51", "Surah Zariat Part1", "<audio controls><source src=\"/Quran/051/Surah Zariat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/051/Surah Zariat 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["052", "Surah Toor", "52", "Surah Toor Part1", "<audio controls><source src=\"/Quran/052/Surah Zariat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/052/Surah Toor 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["053", "Surah Najam", "53.1", "Surah Najam Part1", "<audio controls><source src=\"/Quran/053/Surah Najam 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/053/Surah Najam 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["053", "Surah Najam", "53.2", "Surah Najam Part2", "<audio controls><source src=\"/Quran/053/Surah Najam 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/053/Surah Najam 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["054", "Surah Qamar", "54", "Surah Qamar Part1", "<audio controls><source src=\"/Quran/054/Surah Qamar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/054/Surah Qamar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["055", "Surah Rahman", "55", "Surah Rahman Part1", "<audio controls><source src=\"/Quran/055/Surah Rahman 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/055/Surah Rahman 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["056", "Surah Waqa ", "56", "Surah Waqa Part1", "<audio controls><source src=\"/Quran/056/Surah Waqa 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/056/Surah Waqa 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["057", "Surah Waqa ", "57", "Surah Hadeed Part1", "<audio controls><source src=\"/Quran/057/Surah Hadeed.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/057/Surah Hadeed.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["058", "Surah Mujadalah ", "58.1", "Surah Mujadalah Part1", "<audio controls><source src=\"/Quran/058/Surah Mujadalah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/058/Surah Mujadalah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["058", "Surah Mujadalah ", "58.2", "Surah Mujadalah Part2", "<audio controls><source src=\"/Quran/058/Surah Mujadalah 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/058/Surah Mujadalah 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["059", "Surah Hashar", "59.1", "Surah Hashar Part1", "<audio controls><source src=\"/Quran/059/Surah Hashar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/059/Surah Hashar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["059", "Surah Hashar", "59.2", "Surah Hashar Part2", "<audio controls><source src=\"/Quran/059/Surah Hashar 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/059/Surah Hashar 2.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["060", "Surah Mumtahina", "60", "Surah Hashar Part1", "<audio controls><source src=\"/Quran/060/Surah Mumtahina.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/060/Surah Mumtahina.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["061", "Surah Soaf", "61", "Surah Soaf Part1", "<audio controls><source src=\"/Quran/061/Surah Soaf 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/061/Surah Soaf 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["062", "Surah Jumah", "62", "Surah Soaf Part1", "<audio controls><source src=\"/Quran/062/Surah Jumah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/062/Surah Jumah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  // ["063", "Surah Munafiqun", "63", "Surah Munafiqun Part1", "<audio controls><source src=\"/Quran/063/Surah Munafiqun 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/063/Surah Munafiqun 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["064", "Surah Taghabun", "64", "Surah Taghabun Part1", "<audio controls><source src=\"/Quran/064/Surah Taghabun 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/064/Surah Taghabun 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["065", "Surah Talaq", "65", "Surah Talaq Part1", "<audio controls><source src=\"/Quran/065/Surah Talaq 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/065/Surah Talaq 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["066", "Surah Tahreem", "66", "Surah Tahreem Part1", "<audio controls><source src=\"/Quran/066/Surah Tahreem 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/066/Surah Tahreem 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["067", "Surah Mulk", "67", "Surah Mulk Part1", "<audio controls><source src=\"/Quran/067/Surah Mulk 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/067/Surah Mulk 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["068", "Surah Qalam", "68", "Surah Qalam Part1", "<audio controls><source src=\"/Quran/068/Surah Qalam 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/068/Surah Qalam 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["069", "Surah Alhaqah", "69", "Surah Alhaqah Part1", "<audio controls><source src=\"/Quran/069/Surah Alhaqah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/069/Surah Alhaqah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["070", "Surah Maarij", "70", "Surah Maarij Part1", "<audio controls><source src=\"/Quran/070/Surah Maarij 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/070/Surah Maarij 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["071", "Surah Nooh", "71", "Surah Nooh Part1", "<audio controls><source src=\"/Quran/071/Surah Nooh 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/071/Surah Nooh 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["072", "Surah Jin", "72", "Surah Jin Part1", "<audio controls><source src=\"/Quran/072/Surah Jin 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/072/Surah Jin 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["073", "Surah Muzammil", "73", "Surah Muzammil Part1", "<audio controls><source src=\"/Quran/073/Surah Muzammil 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/073/Surah Muzammil 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["074", "Surah Mudassir", "74", "Surah Mudassir Part1", "<audio controls><source src=\"/Quran/074/Surah Mudassir 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/074/Surah Mudassir 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["075", "Surah Qayamat", "75", "Surah Qayamat Part1", "<audio controls><source src=\"/Quran/075/Surah Qayamat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/075/Surah Qayamat 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["076", "Surah Dahar", "76", "Surah Dahar Part1", "<audio controls><source src=\"/Quran/076/Surah Dahar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/076/Surah Dahar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["077", "Surah Mursalat", "77", "Surah Mursalat Part1", "<audio controls><source src=\"/Quran/077/Surah Mursalat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/077/Surah Dahar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["078", "Surah Nabah", "78", "Surah Nabah Part1", "<audio controls><source src=\"/Quran/078/Surah Nabah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/078/Surah Nabah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["079", "Surah Naziat", "79", "Surah Naziat Part1", "<audio controls><source src=\"/Quran/079/Surah Naziat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/079/Surah Naziat 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["080", "Surah Abasah", "80", "Surah Abasah Part1", "<audio controls><source src=\"/Quran/080/Surah Abasah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/080/Surah Abasah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["081", "Surah Taqweer", "81", "Surah Taqweer Part1", "<audio controls><source src=\"/Quran/081/Surah Taqweer 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/081/Surah Taqweer 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["082", "Surah Infitar", "82", "Surah Infitar Part1", "<audio controls><source src=\"/Quran/082/Surah Infitar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/082/Surah Infitar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["083", "Surah Tatfeef", "83", "Surah Tatfeef Part1", "<audio controls><source src=\"/Quran/083/Surah Tatfeef 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/083/Surah Tatfeef 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["084", "Surah Inshiqaq", "84", "Surah Inshiqaq Part1", "<audio controls><source src=\"/Quran/084/Surah Inshiqaq 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/084/Surah Inshiqaq 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["085", "Surah Burooj", "85", "Surah Burooj Part1", "<audio controls><source src=\"/Quran/085/Surah Burooj 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/085/Surah Burooj 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["086", "Surah Tariq", "86", "Surah Tariq Part1", "<audio controls><source src=\"/Quran/086/Surah Tariq 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/086/Surah Tariq 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["087", "Surahtul Aala", "87", "Surahtul Aala Part1", "<audio controls><source src=\"/Quran/087/Surahtul Aala 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/087/Surahtul Aala 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["088", "Surah Ghashia", "88", "Surah Ghashia Part1", "<audio controls><source src=\"/Quran/088/Surah Ghashia 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/088/Surahtul Aala 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["089", "Surah Fajr", "89", "Surah Fajr Part1", "<audio controls><source src=\"/Quran/089/Surah Fajr 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/089/Surah Fajr 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["090", "Surah Balad", "90", "Surah Balad Part1", "<audio controls><source src=\"/Quran/090/Surah Balad 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/090/Surah Balad 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["091", "Surah Shams", "91", "Surah Shams Part1", "<audio controls><source src=\"/Quran/091/Surah Shams 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/091/Surah Shams 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["092", "Surah Lail", "92", "Surah Lail Part1", "<audio controls><source src=\"/Quran/092/Surah Lail 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/092/Surah Lail 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["093", "Surah Duha", "93", "Surah Duha Part1", "<audio controls><source src=\"/Quran/093/Surah Duha 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/093/Surah Duha 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["094", "Surah Inshira", "94", "Surah Inshira Part1", "<audio controls><source src=\"/Quran/094/Surah Inshira 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/094/Surah Inshira 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["095", "Surah Teen", "95", "Surah Teen Part1", "<audio controls><source src=\"/Quran/095/Surah Teen 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/095/Surah Teen 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["096", "Surah Alaq", "96", "Surah Alaq Part1", "<audio controls><source src=\"/Quran/096/Surah Alaq 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/096/Surah Alaq 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["097", "Surah Qadar", "97", "Surah Qadar Part1", "<audio controls><source src=\"/Quran/097/Surah Qadar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/097/Surah Qadar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["098", "Surahtul Bayina", "98", "Surah Qadar Part1", "<audio controls><source src=\"/Quran/098/Surah Qadar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/098/Surahtul Bayina 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["099", "Surahtul Zilzal", "99", "Surah Zilzal Part1", "<audio controls><source src=\"/Quran/099/Surah Zilzal 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/099/Surah Zilzal 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["100", "Surah Aadiyat", "100", "Surah Aadiyat Part1", "<audio controls><source src=\"/Quran/100/Surah Aadiyat 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/100/Surah Aadiyat 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["101", "Surah Qariyah", "101", "Surah Qariyah Part1", "<audio controls><source src=\"/Quran/101/Surah Qariyah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/101/Surah Qariyah 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["102", "Surah Takasur", "102", "Surah Takasur Part1", "<audio controls><source src=\"/Quran/102/Surah Takasur 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/102/Surah Takasur 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["103", "Surahtul Asar", "103", "Surahtul Asar Part1", "<audio controls><source src=\"/Quran/103/Surahtul Asar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/103/Surahtul Asar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["104", "Surah Hamaza", "104", "Surah Hamaza Part1", "<audio controls><source src=\"/Quran/104/Surah Hamaza 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/104/Surah Hamaza 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["105", "Surahtul Feel", "105", "Surahtul Feel Part1", "<audio controls><source src=\"/Quran/105/Surahtul Feel 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/105/Surahtul Feel 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["106", "Surah Quraish", "106", "Surah Quraish Part1", "<audio controls><source src=\"/Quran/106/Surah Quraish 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/106/Surah Quraish 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["107", "Surah Maoun", "107", "Surah Maoun Part1", "<audio controls><source src=\"/Quran/107/Surah Maoun 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/107/Surah Maoun 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["108", "Surah Kaosar", "108", "Surah Kaosar Part1", "<audio controls><source src=\"/Quran/108/Surah Kaosar 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/108/Surah Kaosar 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["109", "Surah Kafirun", "109", "Surah Kafirun Part1", "<audio controls><source src=\"/Quran/109/Surah Kafirun 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/109/Surah Kafirun 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["110", "Surah Nasr", "110", "Surah Nasr Part1", "<audio controls><source src=\"/Quran/110/Surah Nasr 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/110/Surah Nasr 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["111", "Surahtul Lahab", "111", "Surahtul Lahab Part1", "<audio controls><source src=\"/Quran/111/Surahtul Lahab 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/111/Surahtul Lahab 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["112", "Surah Ikhlas ", "112", "Surah Ikhlas Part1", "<audio controls><source src=\"/Quran/112/Surah Ikhlas 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/112/Surah Ikhlas 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["113", "Surah Falaq ", "113", "Surah Falaq Part1", "<audio controls><source src=\"/Quran/113/Surah Falaq 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/113/Surah Falaq 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "],
+                  ["114", "Surah Naas", "114", "Surah Naas Part1", "<audio controls><source src=\"/Quran/114/Surah Naas 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/114/Surah Naas 1.mp3\" target=\"_blank\" download> <i class=\"material-icons\">cloud_download</i> </a > "]
+                ];
+                $(document).ready(function () {
+                  var groupColumn = 1;
+                  $('#QuranTable').DataTable({
+                    data: dataSet,
+                    columns: [{
+                      title: "Chapter No."
+                    }, {
+                      title: "Chapter Name"
+                    }, {
+                      title: "Parts"
+                    }, {
+                      title: "Description"
+                    }, {
+                      title: "Audio"
+                    }, {
+                      title: "Download"
+                    }
+
+                    ],
+                    "order": [
+                      [0, 'asc']
+                    ],
+                    "displayLength": 5,
+                    "lengthMenu": [5, 10, 25, 50, 75, 100, 125, 150, 175, 200],
+                    "pagingType": "full_numbers",
+                    // dom: 'Bfrtip',
+                    // buttons: [
+                    //     'pageLength', 'copy', 'csv', 'excel', 'print'
+                    // ],
+                    // dom: 'lfrtip',
+                    // "lengthMenu": [10, 25, 50, 75, 100, 114],
+
+                    "drawCallback": function (settings) {
+                      var api = this.api();
+                      var rows = api.rows({
+                        page: 'current'
+                      }).nodes();
+                      var last = null;
+
+                      api.column(groupColumn, {
+                        page: 'current'
+                      }).data().each(function (group, i) {
+                        if (last !== group) {
+                          $(rows).eq(i).before(
+                            '<tr class="group"><td colspan="6">' + group + '</td></tr>'
+                          );
+
+                          last = group;
+                        }
+                      });
+                    }
+
+                  });
+                  // Order by the grouping
+                  $('#QuranTable tbody').on('click', 'tr.group', function () {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
+                      table.order([groupColumn, 'desc']).draw();
+                    } else {
+                      table.order([groupColumn, 'asc']).draw();
+                    }
+                  });
+                });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+              </script>
+</body>
+
+</html>
