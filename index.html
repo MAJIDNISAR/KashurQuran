@@ -553,6 +553,7 @@
     ];
 
     $(document).ready(function () {
+      //scroll effect
       $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
         $('html, body').animate({
@@ -637,7 +638,27 @@
           table.order([groupColumn, 'asc']).draw();
         }
       });
+
+      // pause all other than playing audio
+      $('audio').on('play', (e) => {
+        // var id = $(this).attr('id');
+
+        // alert('audio play was pressed')
+        // alert(e)
+        console.log('e=================', e)
+        audios = $('audio')
+        for (var i = 0, len = audios.length; i < len; i++) {
+          if (audios[i] != e.target) {
+            audios[i].pause();
+          }
+        }
+        // $('audio').not(this).each((index, audio) => {
+        //   audio.pause()
+        // });
+      });
+
     });
+
   </script>
 </body>
 
