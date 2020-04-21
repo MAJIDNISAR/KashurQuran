@@ -521,7 +521,7 @@
       ["002", "Surah Bakarah", "2.1", "Surah Bakarah Part1", "<audio controls><source src=\"/Quran/002/Surah Bakarah 1.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 1.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span>"],
       ["002", "Surah Bakarah", "2.2", "Surah Bakarah Part2", "<audio controls><source src=\"/Quran/002/Surah Bakarah 2.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 2.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
       ["002", "Surah Bakarah", "2.3", "Surah Bakarah Part3", "<audio controls><source src=\"/Quran/002/Surah Bakarah 3.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 3.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
-      // ["002", "Surah Bakarah", "2.4", "Surah Bakarah Part4", "<audio controls><source src=\"/Quran/002/Surah Bakarah 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 4.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
+      ["002", "Surah Bakarah", "2.4", "Surah Bakarah Part4", "<audio controls><source src=\"/Quran/002/Surah Bakarah 4.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 4.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
       // ["002", "Surah Bakarah", "2.5", "Surah Bakarah Part5", "<audio controls><source src=\"/Quran/002/Surah Bakarah 5.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 5.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
       // ["002", "Surah Bakarah", "2.6", "Surah Bakarah Part6", "<audio controls><source src=\"/Quran/002/Surah Bakarah 6.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 6.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
       // ["002", "Surah Bakarah", "2.7", "Surah Bakarah Part7", "<audio controls><source src=\"/Quran/002/Surah Bakarah 7.mp3\" type=\"audio/mp3\">Your browser does not support the audio element.</audio>", "<a href=\"/Quran/002/Surah Bakarah 7.mp3\" target=\"_blank\" download> <span class=\"icon icon-cloud-download\"></span> "],
@@ -794,7 +794,7 @@
 
       });
       // Order by the grouping
-      $('#QuranTable tbody').on('click', 'tr.group', function () {
+      $('#QuranTable tbody').on('click', 'tr', 'tr.group', function () {
         var currentOrder = table.order()[0];
         if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
           table.order([groupColumn, 'desc']).draw();
@@ -803,8 +803,6 @@
         }
         // console.log(table.cell(this).data());
       });
-
-
       // pause all other than playing audio
       $('audio').on('play', (e) => {
         // var id = $(this).attr('id');
