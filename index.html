@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+  <style>
+    tr.group,
+    tr.group:hover {
+      background-color: #ddd !important;
+      text-align: center !important;
+    }
+  </style>
   <!-- <style>
     html {
       scroll-behavior: smooth;
@@ -17,7 +24,7 @@
     gtag('config', 'UA-163816019-1');
   </script>
 
-  <title>Kashur Quran &middot; Saene Madre Zabaane Manz!</title>
+  <title>Kashur Quran &middot; Quran-e-Pak, Saene Madre Zabaane Manz!</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta name="description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
   <meta property="og:url" content="https://KashurQuran.in">
@@ -29,7 +36,7 @@
   <meta name="twitter:creator" content="@majidnisar">
   <meta name="twitter:title" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
   <meta name="twitter:description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
-  <meta name="twitter:image" content="">
+  <meta name="twitter:image" content="https://KashurQuran.in/kashurquran.png">
   <meta name="theme-color" content="#ffffff">
   <script src="js/sharer.min.js"></script>
   <script src="js/lottie-player.js"></script>
@@ -74,6 +81,12 @@
               <div class="navbar-btn-group">
                 <!-- <a class="navbar-btn btn btn-primary btn-block" href="signup-1.html">Sign up</a> -->
                 <a id="listen" class="navbar-btn btn btn-primary btn-block" href="#QuranTable">Listen</a>
+              </div>
+            </li>
+            <li>
+              <div class="navbar-btn-group btn-primary btn-block">
+                <a id="Donate" class="navbar-btn btn btn-primary btn-block" data-toggle="modal"
+                  data-target="#donationModal">Donate</a>
               </div>
             </li>
             <li>
@@ -201,6 +214,7 @@
                 </ul>
               </div>
             </li>
+
           </ul>
         </nav>
       </div>
@@ -487,6 +501,55 @@
         KashurQuran.In, LLC. All rights reserved.</p>
     </div>
   </div>
+  <div id="donationModal" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content bg-primary">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">×</span>
+            <span class="sr-only">Close</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <span class="icon icon-credit-card icon-5x"></span>
+            <h3>Donation!</h3>
+            <p>Donate! towards a noble cause and support our project!
+              <br>We wish to achieve a cross Platform restful Api, Quran reader and Audio Player.</p>
+            <div class="social-list">
+              <a class="social-list-item" target="_blank" href="https://patreon.com/MAJIDNISAR">
+                <img width="30" height="30" class="octicon rounded-1 d-block" alt="patreon"
+                  src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/patreon.svg">
+              </a>
+              <a class="social-list-item" target="_blank" href="https://opencollective.com/majidnisar">
+                <img width="30" height="30" class="octicon rounded-1 d-block" alt="open_collective"
+                  src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/open_collective.svg">
+              </a>
+              <a class="social-list-item" target="_blank"
+                href="https://funding.communitybridge.org/projects/majidnisar">
+                <img width="30" height="30" class="octicon rounded-1 d-block" alt="community_bridge"
+                  src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/community_bridge.svg">
+              </a>
+              <a class="social-list-item" target="_blank" href="https://ko-fi.com/majidnisar">
+                <img width="30" height="30" class="octicon rounded-1 d-block" alt="ko_fi"
+                  src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg">
+              </a>
+              <a class="social-list-item" target="_blank" href="https://liberapay.com/MAJIDNISAR">
+                <img width="25" height="20" class="octicon rounded-1 d-block" alt="liberapay"
+                  src="https://github.githubassets.com/images/modules/site/icons/funding_platforms/liberapay.svg">
+              </a>
+
+            </div>
+            <div class="m-t-lg">
+              <!-- <button class="btn btn-default" data-dismiss="modal" type="button">Continue</button> -->
+              <button class="btn btn-primary" data-dismiss="modal" type="button">Close</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- here i insert footer -->
@@ -725,7 +788,6 @@
           });
         } // End if
       });
-
       var groupColumn = 1;
       $('#QuranTable').DataTable({
         responsive: true,
@@ -774,35 +836,36 @@
         // "lengthMenu": [10, 25, 50, 75, 100, 114],
 
         // "drawCallback": function (settings) {
-        //     var api = this.api();
-        //     var rows = api.rows({
-        //         page: 'current'
-        //     }).nodes();
-        //     var last = null;
+        //   var api = this.api();
+        //   var rows = api.rows({
+        //     page: 'current'
+        //   }).nodes();
+        //   var last = null;
 
-        //     api.column(groupColumn, {
-        //         page: 'current'
-        //     }).data().each(function (group, i) {
-        //         if (last !== group) {
-        //             $(rows).eq(i).before(
-        //                 '<tr class="group"><td colspan="6">' + group + '</td></tr>'
-        //             );
+        //   api.column(groupColumn, {
+        //     page: 'current'
+        //   }).data().each(function (group, i) {
+        //     if (last !== group) {
+        //       $(rows).eq(i).before(
+        //         '<tr class="group"><td colspan="6"><b><i> ' + group + '</i></b></td></tr>'
+        //       );
 
-        //             last = group;
-        //         }
-        //     });
+        //       last = group;
+        //     }
+        //   });
         // }
 
       });
       // Order by the grouping
-      $('#QuranTable tbody').on('click', 'tr.group', function () {
-        var currentOrder = table.order()[0];
-        if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
-          table.order([groupColumn, 'desc']).draw();
-        } else {
-          table.order([groupColumn, 'asc']).draw();
-        }
-        // console.log(table.cell(this).data());
+      $('#QuranTable tbody').on('click', 'tr', 'tr.group', function () {
+
+        // var currentOrder = table.order()[0];
+        // if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
+        //   table.order([groupColumn, 'desc']).draw();
+        // } else {
+        //   table.order([groupColumn, 'asc']).draw();
+        // }
+        // alert(table.cell(this).data());
       });
       // pause all other than playing audio
       $('audio').on('play', (e) => {
