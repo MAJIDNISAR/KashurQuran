@@ -75,13 +75,13 @@
             <!-- <li><a href="#">Faq</a></li> -->
             <!-- <li><a href="#">Team</a></li> -->
             <!-- <li><a href="#">Testimonials</a></li> -->
-            <li><a data-toggle="modal" data-target="#socialModal" data-animation-name="bounceInRight"
-                data-animation-delay="05s">Contact Us</a></li>
+            <li><a data-toggle="modal" data-target="#socialModal">Contact Us</a></li>
             <li><a href="about.html">About Us</a></li>
             <li>
               <div class="navbar-btn-group">
                 <!-- <a class="navbar-btn btn btn-primary btn-block" href="signup-1.html">Sign up</a> -->
-                <a id="listen" class="navbar-btn btn btn-primary btn-block" href="#QuranTable">
+                <a id="listen" class="navbar-btn btn btn-primary btn-block" href="#QuranTable"
+                  data-animation-name="bounceInRight" data-animation-delay="05s">
                   <span class="icon icon-file-sound-o icon-lg icon-fw"></span>
                   Listen</a>
               </div>
@@ -389,7 +389,8 @@
     </div>
   </div> -->
   <!-- here i insert footer -->
-  <div class="footer">
+  <div class="footer" style="background-color: #222;
+    color: #999;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4">
@@ -440,17 +441,11 @@
                 KashurQuran.in Blog
               </a>
             </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                KashurQuran.in Guidelines
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="icon icon-angle-right"></span>
-                Staff
-              </a>
+
+            <a href="#index.html#staff">
+              <span class="icon icon-angle-right"></span>
+              Staff
+            </a>
             </li>
           </ul>
         </div>
