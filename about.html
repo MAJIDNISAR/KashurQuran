@@ -38,70 +38,212 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
   <link rel="stylesheet" href="css/vendor.min.css">
   <link rel="stylesheet" href="css/elephant.min.css">
+  <link rel="stylesheet" href="css/application.min.css">
   <link rel="stylesheet" href="css/landing-page.min.css">
 </head>
 
-<body class="spinner spinner-primary spinner-lg">
-  <div class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="https://kashurquran.in">
-          <!-- logo -->
-          <img class="navbar-brand-logo" src="images/kashurquran.png" alt="KashurQuran" style=" height: 76px !important;
-                              margin-top: -13px;
+<body class="layout layout-header-fixed layout-footer-fixed">
+  <div class="layout-header">
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header" style="background-color: white;">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://kashurquran.in">
+            <!-- logo -->
+            <img class="navbar-brand-logo" src="images/kashurquran.png" alt="KashurQuran" style=" height: 76px !important;
+                              margin-top: 2em;
+                              margin-left:-.4em ;
                               box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                               border-radius: 4px;
                               box-sizing: border-box;">
-        </a>
+          </a>
+        </div>
+        <nav id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://kashurquran.in">Home</a></li>
+            <li><a href="https://majidnisar.com">My Blog</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#staff">Team</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a data-toggle="modal" data-target="#socialModal" data-animation-name="bounceInRight"
+                data-animation-delay="05s">Contact Us</a></li>
+            <li>
+              <div class="navbar-btn-group">
+                <!-- <a class="navbar-btn btn btn-primary btn-block" href="signup-1.html">Sign up</a> -->
+                <a id="listen" class="navbar-btn btn btn-primary btn-block" href="index.html#QuranTable">
+                  <span class="icon icon-file-sound-o icon-lg icon-fw"></span>
+                  Listen</a>
+              </div>
+            </li>
+            <li>
+              <div class="navbar-btn-group">
+                <a id="Donate" class="navbar-btn btn btn-primary btn-block" data-toggle="modal"
+                  data-target="#donationModal">
+                  <span class="icon icon-credit-card icon-lg icon-fw"></span>
+                  Donate
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="navbar-btn btn-group dropdown btn-block">
+                <button class="btn btn-info" type="button" data-sharer="twitter"
+                  data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                  data-hashtags="Kashur, KashurQuran, KashurQuran.in, MajidNisar.com, alnajah.in"
+                  data-url="https://KashurQuran.in">
+                  <span class="icon icon-share-alt icon-lg icon-fw"></span>
+                  Share
+                </button>
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" type="button" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="button" data-sharer="twitter"
+                    data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                    data-hashtags="Kashur, KashurQuran, KashurQuran.in, MajidNisar.com, alnajah.in"
+                    data-url="https://KashurQuran.in">
+                    <a href="#">
+                      <div class="media">
+                        <div class="media-left">
+                          <span class="icon icon-twitter icon-lg icon-fw"></span>
+                        </div>
+                        <div class="media-body">
+                          <span class="d-b">Twitter</span>
+                          <small>Share with people on Twitter</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="button" data-sharer="facebook"
+                    data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                    data-hashtag="#KashurQuran #MajidNisar" data-url="https://KashurQuran.in">
+                    <a href="#">
+                      <div class="media">
+                        <div class="media-left">
+                          <span class="icon icon-facebook icon-lg icon-fw"></span>
+                        </div>
+                        <div class="media-body">
+                          <span class="d-b">facebook</span>
+                          <small>Share with people on facebook</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="button" data-sharer="linkedin"
+                    data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                    data-hashtag="#KashurQuran #MajidNisar" data-url="https://KashurQuran.in">
+                    <a href="#">
+                      <div class="media">
+                        <div class="media-left">
+                          <span class="icon icon-linkedin icon-lg icon-fw"></span>
+                        </div>
+                        <div class="media-body">
+                          <span class="d-b">LinkedIn</span>
+                          <small>Share with people on LinkedIn</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- <li class="button" data-sharer="Whatsapp"
+                                data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                                data-hashtag="#KashurQuran #MajidNisar" data-url="https://KashurQuran.in">
+                                <a href="#">
+                                  <div class="media">
+                                    <div class="media-left">
+                                      <span class="icon icon-whatsapp icon-lg icon-fw"></span>
+                                    </div>
+                                    <div class="media-body">
+                                      <span class="d-b">Whatsapp</span>
+                                      <small>Share with people on Whatsapp</small>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li> -->
+                  <li class="button" data-sharer="Whatsapp"
+                    data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                    data-hashtag="#KashurQuran #MajidNisar" data-url="https://KashurQuran.in" data-web>
+                    <a href="#">
+                      <div class="media">
+                        <div class="media-left">
+                          <span class="icon icon-whatsapp icon-lg icon-fw"></span>
+                        </div>
+                        <div class="media-body">
+                          <span class="d-b">Whatsapp</span>
+                          <small>Share with people on Whatsapp</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="button" data-sharer="reddit"
+                    data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                    data-hashtag="#KashurQuran #MajidNisar" data-url="https://KashurQuran.in" data-web>
+                    <a href="#">
+                      <div class="media">
+                        <div class="media-left">
+                          <span class="icon icon-reddit icon-lg icon-fw"></span>
+                        </div>
+                        <div class="media-body">
+                          <span class="d-b">Reddit</span>
+                          <small>Share with people on Reddit</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="button" data-sharer="email"
+                    data-title="KashurQuran.in: The Holy Quran in our Mother Tounge Kashmiri!"
+                    data-url="https://KashurQuran.in" data-to="Kashurquran@majidnisar.com"
+                    data-subject="KashurQuran.in: Please checkout Holy Quran in Kashmiri Language">
+                    <a
+                      href="mailto:majidnisar@kashurquran.in?subject=KashurQuran.in Holy Quran in kashmiri language = Please checkout https://kashurquran.in">
+                      <div class="media">
+                        <div class="media-left">
+                          <span class="icon icon-email icon-lg icon-fw"></span>
+                        </div>
+                        <div class="media-body">
+                          <span class="d-b">Email</span>
+                          <small>Share with people with Email</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
       </div>
-      <nav id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://kashurquran.in">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#faq">Faq</a></li>
-          <li><a href="#staff">Team</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a data-toggle="modal" data-target="#socialModal" data-animation-name="bounceInRight"
-              data-animation-delay="05s">Contact</a></li>
-          <li>
-            <div class="navbar-btn-group">
-              <a class="navbar-btn btn btn-primary btn-block" href="signup-1.html">Sign up</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
     </div>
   </div>
-  <div class="masthead">
+  <div class="masthead" style="background-color: #0bdab1;">
     <div class="masthead-inner">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <div class="row">
 
-              <div class="col-sm-12 col-sm-offset-0">
-                <lottie-player class="masthead-img" src=" ./images/bismillah.json " background=" ##0ac29d " speed=" 1 "
-                  id="loader " autoplay>
-                </lottie-player>
-              </div>
-              <div class="col-sm-10 col-sm-offset-1" style="margin-top: -2.5 em;">
-                <h3 class="masthead-heading" style="color: #fff;font-weight: 400;text-align: center; font-size: 19px;">
-                  The Kashur Quran -
-                  Kashmiri Translation By Mulana Mohammad Yousuf Shah Saeb
-                  (Rahmatullah-i-Allah) <br> An attempt to make Quran Accessible! on every platform, browser, or device.
-                </h3>
-                <p class="masthead-lead"
-                  style="color: rgba(255,255,255,.8);font-size: 16px;font-weight: 300;line-height: 1.2;text-align: center;">
-                  KashurQuran.in is a humble attempt at making The Holy Quran accessible to Kashmiri Speaking
-                  population!
-                </p>
-              </div>
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="row">
+
+            <div class="col-sm-12 col-sm-offset-0">
+              <lottie-player class="masthead-img" src=" ./images/bismillah.json " background=" ##0ac29d " speed=" 1 "
+                id="loader " autoplay>
+              </lottie-player>
+            </div>
+            <div class="col-sm-10 col-sm-offset-1" style="margin-top: -2.5 em;">
+              <h3 class="masthead-heading" style="color: #fff;font-weight: 400;text-align: center; font-size: 19px;">
+                The Kashur Quran -
+                Kashmiri Translation By Mulana Mohammad Yousuf Shah Saeb
+                (Rahmatullah-i-Allah) <br> An attempt to make Quran Accessible! on every platform, browser, or device.
+              </h3>
+              <p class="masthead-lead"
+                style="color: rgba(255,255,255,.8);font-size: 16px;font-weight: 300;line-height: 1.2;text-align: center;">
+                KashurQuran.in is a humble attempt at making The Holy Quran accessible to Kashmiri Speaking
+                population!
+              </p>
             </div>
           </div>
         </div>
@@ -595,7 +737,7 @@
         </div>
         <div class="modal-body">
           <div class="text-center">
-            <span class="icon icon-credit-card icon-5x"></span>
+            <span class="icon icon-users icon-5x"></span>
             <h3>Contact Us!</h3>
             <p>Contanct Us ! on our different Social Platforms a noble cause and support our project!
               <br>We wish to achieve a cross Platform restful Api, Quran reader and Audio Player. <br>
