@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Kaeshur Quran &middot;Quran-e-Pak, Saene Madre Zabaane Manz!</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-  <meta name="description"
-    content="Kashur Qura is an admin template that helps you build modern Admin Applications, professionally fast! Built on top of Bootstrap, it includes a large collection of HTML, CSS and JS components that are simple to use and easy to customize.">
+  <meta name="description" content="Kashur Quran Kashur Quran is Quran tranlated in Kashmiri Language..">
   <meta property="og:url" content="https://KashurQuran.in">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kashur Quran is Quran tranlated in Kashmiri Language..">
@@ -56,7 +55,7 @@
           <a class="navbar-brand" href="https://kashurquran.in">
             <!-- logo -->
             <img class="navbar-brand-logo" src="images/kashurquran.png" alt="KashurQuran" style=" height: 76px !important;
-                              margin-top: 2em;
+                              margin-top: -13px;
                               margin-left:-.4em ;
                               box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
                               border-radius: 4px;
@@ -71,8 +70,7 @@
             <li><a href="#faq">Faq</a></li>
             <li><a href="#staff">Team</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
-            <li><a data-toggle="modal" data-target="#socialModal" data-animation-name="bounceInRight"
-                data-animation-delay="05s">Contact Us</a></li>
+            <li><a data-toggle="modal" data-target="#socialModal">Contact Us</a></li>
             <li>
               <div class="navbar-btn-group">
                 <!-- <a class="navbar-btn btn btn-primary btn-block" href="signup-1.html">Sign up</a> -->
@@ -84,7 +82,7 @@
             <li>
               <div class="navbar-btn-group">
                 <a id="Donate" class="navbar-btn btn btn-primary btn-block" data-toggle="modal"
-                  data-target="#donationModal">
+                  data-target="#donationModal" data-animation-name="bounceInRight" data-animation-delay="05s">
                   <span class="icon icon-credit-card icon-lg icon-fw"></span>
                   Donate
                 </a>
@@ -254,12 +252,19 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12" data-animation-name="fadeIn" data-animation-delay="01s">
-          <h3>Modi blanditiis mollitia consequatur suscipit, natus possimus totam rem eius.</h3>
+          <h3>
+            اعوذ باللہ من الشیطان الرجیم
+          </h3>
+          <h3>بسم الله الرحمن الرحيم</h3>
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
-              <p>Praesent consequat arcu sem, vitae accumsan nunc lacinia id. Mauris quis odio arcu donec pharetra et
-                nibh et vulputate class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos metus.</p>
+              <p>And hold firmly to the rope of Allah all together and do not become divided. And remember the favor of
+                Allah upon you -
+                when you were enemies and He brought your hearts together and you became, by His favor, brothers. And
+                you were on the
+                edge of a pit of the Fire, and He saved you from it. Thus does Allah make clear to you His verses that
+                you may be
+                guided. Holy Quran (3.103)</p>
             </div>
           </div>
         </div>
@@ -769,8 +774,8 @@
                     <small class="help-block"> Fill the details to send us an email</small>
                   </div>
                   <!-- <div class="form-group form-group-lg">
-                    <input class="form-control" type="text" placeholder="Body">
-                  </div> -->
+                      <input class="form-control" type="text" placeholder="Body">
+                    </div> -->
                   <button id='emailButton' type="submit" class="btn btn-lg btn-warning btn-block">Send</button>
                 </form>
               </div>
@@ -805,20 +810,20 @@
                     </a>
                     <!--  -->
                     <!-- <a class="rounded sq-40 bg-twitter" href="https://twitter.com/majidnisar">
-                      <span class="icon icon-twitter"></span>
-                    </a>
-                    <a class="rounded sq-40 bg-facebook" href="#">
-                      <span class="icon icon-facebook"></span>
-                    </a>
-                    <a class="rounded sq-40 bg-googleplus" href="#">
-                      <span class="icon icon-google-plus"></span>
-                    </a>
-                    <a class="rounded sq-40 bg-pinterest" href="#">
-                      <span class="icon icon-pinterest-p"></span>
-                    </a>
-                    <a class="rounded sq-40 bg-linkedin" href="#">
-                      <span class="icon icon-linkedin"></span>
-                    </a> -->
+                        <span class="icon icon-twitter"></span>
+                      </a>
+                      <a class="rounded sq-40 bg-facebook" href="#">
+                        <span class="icon icon-facebook"></span>
+                      </a>
+                      <a class="rounded sq-40 bg-googleplus" href="#">
+                        <span class="icon icon-google-plus"></span>
+                      </a>
+                      <a class="rounded sq-40 bg-pinterest" href="#">
+                        <span class="icon icon-pinterest-p"></span>
+                      </a>
+                      <a class="rounded sq-40 bg-linkedin" href="#">
+                        <span class="icon icon-linkedin"></span>
+                      </a> -->
                   </div>
                 </div>
               </div>
@@ -861,21 +866,23 @@
   </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/elephant.min.js"></script>
-  <script src="js/landing-page.min.js"></script>
+  <script src="js/application.min.js"></script>
+  <script src="js/landing-page.min.js "></script>
+  <script src="js/demo.min.js"></script>
   <script>
-    $('#emailButton').click(function () {
-      $.ajax({
-        url: 'href="mailto:majidnisar@kashurquarn.in?Subject=' + $(#subject).val() += Hello % 20again',
-        type: 'POST',
-        data: {
-        email: 'email@example.com',
-        message: 'hello world!'
-      },
-        success: function (msg) {
-          alert('Email Sent');
-        }
-      });
-    });
+    // $('#emailButton').click(function () {
+    //   $.ajax({
+    //     url: 'href="mailto:majidnisar@kashurquarn.in?Subject=' + $(#subject).val() += Hello % 20again',
+    //     type: 'POST',
+    //     data: {
+    //     email: 'email@example.com',
+    //     message: 'hello world!'
+    //   },
+    //     success: function (msg) {
+    //       alert('Email Sent');
+    //     }
+    //   });
+    // });
   </script>
 </body>
 
