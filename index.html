@@ -597,7 +597,7 @@
             </p>
             <div class="row pos-r">
               <div class="col-sm-6 p-x-lg" data-toggle="match-height" style="">
-                <form action="/">
+                <form>
                   <h4>Send an email across</h4>
                   <div class="form-group form-group-lg">
                     <input id="fname" name="fname" class="form-control" type="text" placeholder="First Name">
@@ -920,6 +920,21 @@
     ];
 
     $(document).ready(function () {
+      /*
+      email function
+      */
+      // $('#emailButton').click(function (event) {
+      //   $(location).attr('href', 'mailto:majidnisar@gmail.com?subject='
+      //     + encodeURIComponent("Kashurquran:") + encodeURIComponent($("#subject").val())
+      //     + "&body="
+      //     + encodeURIComponent($("#emailBody").val())
+      //     + "sent by :" + encodeURIComponent($("#fname").val()) + encodeURIComponent($("#lanme").val())
+      //   )
+      //   event.preventDefault()
+      //   // alert('email sent ')
+      //   toastr.info('Mail Successfully sent!')
+
+      // });
       //scroll effect
       // $(document).on('click', 'a[href^="#"]', function (event) {
       //   event.preventDefault();
@@ -961,8 +976,8 @@
         //     { responsivePriority: 1, targets: 2 }
 
         // ],
-        data: dataSet,
-        columns: [{
+        "data": dataSet,
+        "columns": [{
           title: "Chapter No.",
           responsivePriority: -5
         }, {
