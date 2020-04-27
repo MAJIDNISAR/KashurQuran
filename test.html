@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+
+  <!-- <style>
+    tr.group,
+    tr.group:hover {
+      background-color: #ddd !important;
+      text-align: center !important;
+    }
+  </style> -->
+  <!-- <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style> -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163816019-1"></script>
   <script>
@@ -60,10 +73,10 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://KashurQuran.in">Home</a></li>
             <li><a href="https://majidnisar.com">My Blog</a></li>
-            <li><a href="about.html#features">Features</a></li>
-            <!-- <li><a href="about.html#faq">Faq</a></li> -->
-            <li><a href="about.html#staff">Team</a></li>
-            <!-- <li><a href="about.html#testimonials">Testimonials</a></li> -->
+            <!-- <li><a href="#">Features</a></li> -->
+            <!-- <li><a href="#">Faq</a></li> -->
+            <!-- <li><a href="#">Team</a></li> -->
+            <!-- <li><a href="#">Testimonials</a></li> -->
             <li><a data-toggle="modal" data-target="#socialModal">Contact Us</a></li>
             <li><a href="about.html">About Us</a></li>
             <li>
@@ -283,7 +296,10 @@
 
         <!-- <div class="layout-footer">
             <div class="layout-footer-body">
-              <p id="copyright">.</p>
+              <p>©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script> KashurQuran.In, LLC. All rights reserved.</p>
             </div>
           </div> -->
       </div>
@@ -377,8 +393,9 @@
     </div>
   </div> -->
   <!-- here i insert footer -->
-  <div class="footer">
-    <div class="container" style="padding-top: 1.5em;">
+  <div class="footer" style="background-color: #222;
+    color: #999;">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4">
           <h4 class="footer-heading">KashurQuran.in</h4>
@@ -417,7 +434,7 @@
           <h4 class="footer-heading">KashurQuran.in</h4>
           <ul class="footer-links">
             <li>
-              <a href="about.html">
+              <a href="#">
                 <span class="icon icon-angle-right"></span>
                 About Us
               </a>
@@ -429,7 +446,7 @@
               </a>
             </li>
 
-            <a href="about.html#staff">
+            <a href="about.html.html#staff">
               <span class="icon icon-angle-right"></span>
               Staff
             </a>
@@ -457,9 +474,40 @@
           </p>
 
         </div>
-
+        <div class="col-sm-4 col-md-2">
+          <!-- <h4 class="footer-heading">Upgrade</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="#">
+                <span class="icon icon-angle-right"></span>
+                Personal
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-angle-right"></span>
+                Organization
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-angle-right"></span>
+                Organization Plus
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon icon-angle-right"></span>
+                Enterprise
+              </a>
+            </li>
+          </ul> -->
+        </div>
       </div>
-      <p id="copyright"></p>
+      <p id="copyright">©
+        <!-- <script>document.write(new Date().getFullYear());</script> -->
+        <!-- <script>$('#copyright').text('©' + (new Date).getFullYear() + 'KashurQuran.In, LLC. All rights reserved.')</script> -->
+        <!-- KashurQuran.In, LLC. All rights reserved.</p> -->
     </div>
   </div>
   <div id="donationModal" tabindex="-1" role="dialog" class="modal fade" style="display: none;">
@@ -656,8 +704,8 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/elephant.min.js"></script>
   <script src="js/application.min.js"></script>
-  <script src="js/demo.min.js"></script>
   <script src="js/landing-page.min.js "></script>
+  <script src="js/demo.min.js"></script>
   <script>
     $(window).on('load', () => {
       console.log('Aaoozu-Billahi-Mina-Shaitan-i-Rajeem', '\n', 'Bismillah-i-Rahmaanir-Raheem')
