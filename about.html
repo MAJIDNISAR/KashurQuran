@@ -729,9 +729,7 @@
           </ul>
         </div>
       </div>
-      <p>©
-        <script>document.write(new Date().getFullYear());</script>
-        KashurQuran.In, LLC. All rights reserved.</p>
+      <p id="copyright"></p>
     </div>
   </div>
   </div>
@@ -923,6 +921,10 @@
   <script src="js/landing-page.min.js "></script>
   <script src="js/demo.min.js"></script>
   <script>
+    $(document).ready(() => {
+      footerString = '© ' + JSON.stringify(new Date().getFullYear()) + ' KashurQuran.In, LLC. All rights reserved'
+      $('#copyright').text(footerString)
+    })
     // $('#emailButton').click(function () {
     //   $.ajax({
     //     url: 'href="mailto:majidnisar@kashurquarn.in?Subject=' + $(#subject).val() += Hello % 20again',
