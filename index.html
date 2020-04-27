@@ -283,10 +283,7 @@
 
         <!-- <div class="layout-footer">
             <div class="layout-footer-body">
-              <p>©
-                <script>
-                  document.write(new Date().getFullYear())
-                </script> KashurQuran.In, LLC. All rights reserved.</p>
+              <p id="copyright">.</p>
             </div>
           </div> -->
       </div>
@@ -892,6 +889,8 @@
     ];
 
     $(document).ready(function () {
+      footerString = '© ' + JSON.stringify(new Date().getFullYear()) + ' KashurQuran.In, LLC. All rights reserved'
+      $('#copyright').text(footerString)
       /*
       email function
       */
