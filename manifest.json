@@ -35,9 +35,5 @@
     "src": "images/kashurquran512.png",
     "sizes": "512x512",
     "type": "image/png"
-  }],
-  "related_applications": [{
-    "platform": "play",
-    "url": ""
   }]
 }
