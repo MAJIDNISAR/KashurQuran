@@ -33,14 +33,14 @@ if('serviceWorker' in navigator) {
   <meta name="twitter:image" content="https://KashurQuran.in/kashurquran.png">
   <meta name="theme-color" content="#ffffff">
    <link rel="apple-touch-icon" href="../images/kashurquran.png">
-  <script src="js/sharer.min.js"></script>
+  <script src="js/sharer.min.js" async></script>
   <script src="js/lottie-player.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
-  <link rel="stylesheet" href="css/vendor.min.css">
-  <link rel="stylesheet" href="css/elephant.min.css">
-  <link rel="stylesheet" href="css/application.min.css">
-  <link rel="stylesheet" href="css/demo.min.css">
-  <link rel="stylesheet" href="css/landing-page.min.css">
+  <link rel="stylesheet" rel="preload" href="css/vendor.min.css" as="style">
+  <link rel="preload" href="css/elephant.min.css" as="style">
+  <link rel="preload" href="css/application.min.css" as="style">
+  <link rel="preload" href="css/demo.min.css" as="style">
+  <link rel="preload" href="css/landing-page.min.css" as="style">
   <link rel="manifest" href="manifest.json">
 </head>
 <!-- <body class="layout layout-header-fixed spinner spinner-primary spinner-lg"> -->
@@ -661,11 +661,11 @@ if('serviceWorker' in navigator) {
 
   <!-- here i insert footer -->
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/elephant.min.js"></script>
-  <script src="js/application.min.js"></script>
-  <script src="js/demo.min.js"></script>
-  <script src="js/landing-page.min.js "></script>
+  <script src="js/vendor.min.js" async></script>
+  <script src="js/elephant.min.js" async></script>
+  <script src="js/application.min.js" async></script>
+  <script src="js/demo.min.js" async></script>
+  <script src="js/landing-page.min.js" async></script>
   <script>
     $(window).on('load', () => {
       console.log('Aaoozu-Billahi-Mina-Shaitan-i-Rajeem', '\n', 'Bismillah-i-Rahmaanir-Raheem')
