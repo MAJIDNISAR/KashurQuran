@@ -27,8 +27,9 @@ self.addEventListener('install', function (event) {
           '/js/vendor.min.js',
           '/js/elephant.min.js',
           '/js/application.min.js',
-          '/js/landing-page.min.js',
           '/js/demo.js',
+          '/js/landing-page.min.js',
+     
           'https://majidnisar.com/KashurQuranBlog',
           'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap'
         ])
