@@ -14,15 +14,10 @@ self.addEventListener('install', function (event) {
           '/js/application.min.css',
           '/css/demo.min.css',
           '/js/vendor.js',
-          
           '/js/elephant.js',
           '/js/application.js',
           '/js/demo.js',
-          
-          '/js/axios.min.js',
           '/js/jquery.min.js',
-          '/js/password.js',
-          '/images/*.jpg',
           'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap'
         ])
       })
