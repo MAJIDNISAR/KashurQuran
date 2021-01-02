@@ -19,19 +19,20 @@ self.addEventListener('install', function (event) {
           'https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg',
           'https://github.githubassets.com/images/modules/site/icons/funding_platforms/liberapay.svg',
           '/images/kashurquran.png',
+          'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap',
+          '/js/sharer.min.js',
+          '/js/lottie-player.js',
+          '/css/vendor.min.css',
           '/css/elephant.min.css',
           '/css/application.min.css',
           '/css/demo.min.css',
           '/css/landing-page.min.css',
-          '/js/sharer.min.js',
           '/js/vendor.min.js',
           '/js/elephant.min.js',
           '/js/application.min.js',
           '/js/demo.js',
           '/js/landing-page.min.js',
-     
-          'https://majidnisar.com/KashurQuranBlog',
-          'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap'
+          'https://majidnisar.com/KashurQuranBlog'
         ])
       })
   )
