@@ -11,7 +11,13 @@
 
     gtag('config', 'UA-163816019-1');
   </script>
-
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/js/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
   <title>Kashur Quran &middot; Quran-e-Pak, Saene Madre Zabaane Manz!</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta name="description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
@@ -26,6 +32,7 @@
   <meta name="twitter:description" content="Kashur Quran is Quran tranlated in Kashmiri Language.">
   <meta name="twitter:image" content="https://KashurQuran.in/kashurquran.png">
   <meta name="theme-color" content="#ffffff">
+   <link rel="apple-touch-icon" href="../images/kashurquran.png">
   <script src="js/sharer.min.js"></script>
   <script src="js/lottie-player.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700">
