@@ -8,6 +8,7 @@ self.addEventListener('install', function (event) {
         cache.addAll([
           '/',
           '/index',
+          '/js/jquery.min.js',
           '/images/bismillah.json',
           '/index.html',
           '/about.html',
@@ -22,14 +23,12 @@ self.addEventListener('install', function (event) {
           '/css/application.min.css',
           '/css/demo.min.css',
           '/css/landing-page.min.css',
-          
           '/js/sharer.min.js',
           '/js/vendor.min.js',
           '/js/elephant.min.js',
           '/js/application.min.js',
           '/js/landing-page.min.js',
           '/js/demo.js',
-          '/js/jquery.min.js',
           'https://majidnisar.com/KashurQuranBlog',
           'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap'
         ])
