@@ -1,7 +1,7 @@
 {
   "name": "Kashur Quran",
   "short_name": "Kashur Quran",
-  "start_url": "/index.html",
+  "start_url": ".",
   "display": "standalone",
 "orientation": "portrait-primary",
   "background_color": "#0bdab1",
