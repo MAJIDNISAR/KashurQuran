@@ -8,7 +8,7 @@ self.addEventListener('install', function (event) {
         cache.addAll([
           '/',
           '/index',
-          '/js/jquery.min.js',
+          //'/js/jquery.min.js',
           '/images/bismillah.json',
           '/index.html',
           '/about.html',
