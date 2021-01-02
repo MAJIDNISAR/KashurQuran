@@ -1,3 +1,4 @@
+
 self.addEventListener('install', function (event) {
   console.log('SW Installed')
   event.waitUntil(
@@ -7,7 +8,7 @@ self.addEventListener('install', function (event) {
         cache.addAll([
           '/',
           '/index',
-          'index.html',
+          '/index.html',
           '/about.html',
           '/js/vendor.min.css',
           '/js/application.min.css',
@@ -19,7 +20,7 @@ self.addEventListener('install', function (event) {
           '/js/demo.js',
           
           '/js/axios.min.js',
-          'js/jquery.min.js',
+          '/js/jquery.min.js',
           '/js/password.js',
           '/images/*.jpg',
           'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap'
