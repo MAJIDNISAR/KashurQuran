@@ -19,7 +19,7 @@ self.addEventListener('install', function (event) {
           'https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg',
           'https://github.githubassets.com/images/modules/site/icons/funding_platforms/liberapay.svg',
           '/images/kashurquran.png',
-          'https://fonts.googleapis.com/css?family=Raleway:400,700',
+          'https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap',
           '/js/sharer.min.js',
           '/js/lottie-player.js',
           '/css/vendor.min.css',
