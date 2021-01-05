@@ -12,6 +12,8 @@ self.addEventListener('install', function (event) {
           '/index.html',
           '/about.html',
           '/images/paypal.svg',
+          '/fonts/fontawesome-webfont.woff?v=4.6.3',
+          'https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700&display=swap',
           '/fonts/fontawesome-webfont.woff2?v=4.6.3',
           'https://github.githubassets.com/images/modules/site/icons/funding_platforms/patreon.svg',
           'https://github.githubassets.com/images/modules/site/icons/funding_platforms/open_collective.svg',
